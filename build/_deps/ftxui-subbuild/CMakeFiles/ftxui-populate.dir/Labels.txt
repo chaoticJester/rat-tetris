@@ -1,0 +1,14 @@
+# Target labels
+ ftxui-populate
+# Source files and their labels
+E:/My_personal_project/tetris-terminal/build/_deps/ftxui-subbuild/CMakeFiles/ftxui-populate
+E:/My_personal_project/tetris-terminal/build/_deps/ftxui-subbuild/CMakeFiles/ftxui-populate.rule
+E:/My_personal_project/tetris-terminal/build/_deps/ftxui-subbuild/CMakeFiles/ftxui-populate-complete.rule
+E:/My_personal_project/tetris-terminal/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-build.rule
+E:/My_personal_project/tetris-terminal/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-configure.rule
+E:/My_personal_project/tetris-terminal/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-download.rule
+E:/My_personal_project/tetris-terminal/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-install.rule
+E:/My_personal_project/tetris-terminal/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-mkdir.rule
+E:/My_personal_project/tetris-terminal/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-patch.rule
+E:/My_personal_project/tetris-terminal/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-test.rule
+E:/My_personal_project/tetris-terminal/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-update.rule

@@ -1,0 +1,21 @@
+# ninja log v7
+1	53	8096169658594658	ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-mkdir	c4350054813808b6
+1	53	8096169658594658	E:/My_personal_project/tetris-terminal/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-mkdir	c4350054813808b6
+54	76029	8096170418352076	ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-download	7226ba943ad4ba7f
+54	76029	8096170418352076	E:/My_personal_project/tetris-terminal/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-download	7226ba943ad4ba7f
+76029	76179	8096170418454412	ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-update	26d2b3726151625d
+76029	76179	8096170418454412	E:/My_personal_project/tetris-terminal/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-update	26d2b3726151625d
+76179	76273	8096170420825430	ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-patch	158f87da1c5c01c2
+76179	76273	8096170420825430	E:/My_personal_project/tetris-terminal/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-patch	158f87da1c5c01c2
+76273	76343	8096170421515069	ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-configure	2807686d8123170f
+76273	76343	8096170421515069	E:/My_personal_project/tetris-terminal/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-configure	2807686d8123170f
+76343	76416	8096170422252499	ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-build	591f50ee422050fc
+76343	76416	8096170422252499	E:/My_personal_project/tetris-terminal/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-build	591f50ee422050fc
+76416	76488	8096170422982268	ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-install	4358910bc0bbbc1c
+76416	76488	8096170422982268	E:/My_personal_project/tetris-terminal/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-install	4358910bc0bbbc1c
+76488	76641	8096170424158480	ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-test	39292fc7a47b8876
+76488	76641	8096170424158480	E:/My_personal_project/tetris-terminal/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-test	39292fc7a47b8876
+76641	76752	8096170425597840	CMakeFiles/ftxui-populate-complete	475fdffc4c33b108
+76641	76752	8096170425597840	ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-done	475fdffc4c33b108
+76641	76752	8096170425597840	E:/My_personal_project/tetris-terminal/build/_deps/ftxui-subbuild/CMakeFiles/ftxui-populate-complete	475fdffc4c33b108
+76641	76752	8096170425597840	E:/My_personal_project/tetris-terminal/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-done	475fdffc4c33b108
