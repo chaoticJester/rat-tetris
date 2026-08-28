@@ -12,8 +12,8 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(ftxui)
 
-add_executable(my_tui_app main.cpp)
-target_link_libraries(my_tui_app
+add_executable(TetrisTerminal main.cpp)
+target_link_libraries(TetrisTerminal
   PRIVATE ftxui::screen
   PRIVATE ftxui::dom
   PRIVATE ftxui::component
