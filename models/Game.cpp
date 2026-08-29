@@ -160,3 +160,16 @@ int Game::getTotalLines() const {
 double Game::getFallDelay() const { 
     return levelManager.getFallDelay(); 
 }
+
+std::array<Point,4> Game::getGhostBlocks() const {
+    Tetromino ghost = current;
+    while(true) {
+        Tetromino copy = ghost;
+        copy.move(0, 1);
+        if(!isValidPosition(copy)) {
+            break;
+        }
+        ghost = copy;
+    }
+    return ghost.getBlocks();
+}

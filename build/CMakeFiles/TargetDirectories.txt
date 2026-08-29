@@ -1,4 +1,4 @@
-E:/My_personal_project/tetris-terminal/build/CMakeFiles/my_tui_app.dir
+E:/My_personal_project/tetris-terminal/build/CMakeFiles/TetrisTerminal.dir
 E:/My_personal_project/tetris-terminal/build/CMakeFiles/package.dir
 E:/My_personal_project/tetris-terminal/build/CMakeFiles/package_source.dir
 E:/My_personal_project/tetris-terminal/build/CMakeFiles/edit_cache.dir

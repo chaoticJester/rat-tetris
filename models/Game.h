@@ -40,4 +40,5 @@ class Game {
         int getLevel() const;
         int getTotalLines() const;
         double getFallDelay() const;   
+        std::array<Point,4> getGhostBlocks() const;
 };

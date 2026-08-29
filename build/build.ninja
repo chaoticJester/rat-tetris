@@ -36,42 +36,42 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = E$:/My_personal_project/tetris-terminal/build/
 # =============================================================================
-# Object build statements for EXECUTABLE target my_tui_app
+# Object build statements for EXECUTABLE target TetrisTerminal
 
 
 #############################################
-# Order-only phony target for my_tui_app
+# Order-only phony target for TetrisTerminal
 
-build cmake_object_order_depends_target_my_tui_app: phony || cmake_object_order_depends_target_component cmake_object_order_depends_target_dom cmake_object_order_depends_target_screen
+build cmake_object_order_depends_target_TetrisTerminal: phony || cmake_object_order_depends_target_component cmake_object_order_depends_target_dom cmake_object_order_depends_target_screen
 
-build CMakeFiles/my_tui_app.dir/main.cpp.obj: CXX_COMPILER__my_tui_app_unscanned_ E$:/My_personal_project/tetris-terminal/main.cpp || cmake_object_order_depends_target_my_tui_app
-  DEP_FILE = CMakeFiles\my_tui_app.dir\main.cpp.obj.d
+build CMakeFiles/TetrisTerminal.dir/main.cpp.obj: CXX_COMPILER__TetrisTerminal_unscanned_ E$:/My_personal_project/tetris-terminal/main.cpp || cmake_object_order_depends_target_TetrisTerminal
+  DEP_FILE = CMakeFiles\TetrisTerminal.dir\main.cpp.obj.d
   FLAGS = -std=gnu++17
   INCLUDES = -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = CMakeFiles\my_tui_app.dir
-  OBJECT_FILE_DIR = CMakeFiles\my_tui_app.dir
-  TARGET_COMPILE_PDB = CMakeFiles\my_tui_app.dir\
-  TARGET_PDB = my_tui_app.pdb
-  TARGET_SUPPORT_DIR = CMakeFiles\my_tui_app.dir
+  OBJECT_DIR = CMakeFiles\TetrisTerminal.dir
+  OBJECT_FILE_DIR = CMakeFiles\TetrisTerminal.dir
+  TARGET_COMPILE_PDB = CMakeFiles\TetrisTerminal.dir\
+  TARGET_PDB = TetrisTerminal.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\TetrisTerminal.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target my_tui_app
+# Link build statements for EXECUTABLE target TetrisTerminal
 
 
 #############################################
-# Link the executable my_tui_app.exe
+# Link the executable TetrisTerminal.exe
 
-build my_tui_app.exe: CXX_EXECUTABLE_LINKER__my_tui_app_ CMakeFiles/my_tui_app.dir/main.cpp.obj | _deps/ftxui-build/libftxui-screen.a _deps/ftxui-build/libftxui-dom.a _deps/ftxui-build/libftxui-component.a _deps/ftxui-build/libftxui-dom.a _deps/ftxui-build/libftxui-screen.a || _deps/ftxui-build/libftxui-component.a _deps/ftxui-build/libftxui-dom.a _deps/ftxui-build/libftxui-screen.a
+build TetrisTerminal.exe: CXX_EXECUTABLE_LINKER__TetrisTerminal_ CMakeFiles/TetrisTerminal.dir/main.cpp.obj | _deps/ftxui-build/libftxui-screen.a _deps/ftxui-build/libftxui-dom.a _deps/ftxui-build/libftxui-component.a _deps/ftxui-build/libftxui-dom.a _deps/ftxui-build/libftxui-screen.a || _deps/ftxui-build/libftxui-component.a _deps/ftxui-build/libftxui-dom.a _deps/ftxui-build/libftxui-screen.a
   LINK_LIBRARIES = _deps/ftxui-build/libftxui-screen.a  _deps/ftxui-build/libftxui-dom.a  _deps/ftxui-build/libftxui-component.a  _deps/ftxui-build/libftxui-dom.a  _deps/ftxui-build/libftxui-screen.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\my_tui_app.dir
+  OBJECT_DIR = CMakeFiles\TetrisTerminal.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\my_tui_app.dir\
-  TARGET_FILE = my_tui_app.exe
-  TARGET_IMPLIB = libmy_tui_app.dll.a
-  TARGET_PDB = my_tui_app.pdb
-  TARGET_SUPPORT_DIR = CMakeFiles\my_tui_app.dir
+  TARGET_COMPILE_PDB = CMakeFiles\TetrisTerminal.dir\
+  TARGET_FILE = TetrisTerminal.exe
+  TARGET_IMPLIB = libTetrisTerminal.dll.a
+  TARGET_PDB = TetrisTerminal.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\TetrisTerminal.dir
 
 
 #############################################
@@ -102,9 +102,8 @@ build package_source: phony CMakeFiles/package_source.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build && "C:\Program Files\CMake\bin\cmake-gui.exe" -SE:\My_personal_project\tetris-terminal -BE:\My_personal_project\tetris-terminal\build"
-  DESC = Running CMake cache editor...
-  pool = console
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build && C:\msys64\mingw64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
   restat = 1
 
 build edit_cache: phony CMakeFiles/edit_cache.util
@@ -1034,9 +1033,8 @@ build _deps/ftxui-build/package_source: phony _deps/ftxui-build/CMakeFiles/packa
 # Utility command for edit_cache
 
 build _deps/ftxui-build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build\_deps\ftxui-build && "C:\Program Files\CMake\bin\cmake-gui.exe" -SE:\My_personal_project\tetris-terminal -BE:\My_personal_project\tetris-terminal\build"
-  DESC = Running CMake cache editor...
-  pool = console
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build\_deps\ftxui-build && C:\msys64\mingw64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
   restat = 1
 
 build _deps/ftxui-build/edit_cache: phony _deps/ftxui-build/CMakeFiles/edit_cache.util
@@ -1129,9 +1127,8 @@ build _deps/ftxui-build/examples/package_source: phony _deps/ftxui-build/example
 # Utility command for edit_cache
 
 build _deps/ftxui-build/examples/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build\_deps\ftxui-build\examples && "C:\Program Files\CMake\bin\cmake-gui.exe" -SE:\My_personal_project\tetris-terminal -BE:\My_personal_project\tetris-terminal\build"
-  DESC = Running CMake cache editor...
-  pool = console
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build\_deps\ftxui-build\examples && C:\msys64\mingw64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
   restat = 1
 
 build _deps/ftxui-build/examples/edit_cache: phony _deps/ftxui-build/examples/CMakeFiles/edit_cache.util
@@ -1224,9 +1221,8 @@ build _deps/ftxui-build/doc/package_source: phony _deps/ftxui-build/doc/CMakeFil
 # Utility command for edit_cache
 
 build _deps/ftxui-build/doc/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build\_deps\ftxui-build\doc && "C:\Program Files\CMake\bin\cmake-gui.exe" -SE:\My_personal_project\tetris-terminal -BE:\My_personal_project\tetris-terminal\build"
-  DESC = Running CMake cache editor...
-  pool = console
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build\_deps\ftxui-build\doc && C:\msys64\mingw64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
   restat = 1
 
 build _deps/ftxui-build/doc/edit_cache: phony _deps/ftxui-build/doc/CMakeFiles/edit_cache.util
@@ -1288,6 +1284,8 @@ build _deps/ftxui-build/doc/install/strip: phony _deps/ftxui-build/doc/CMakeFile
 # =============================================================================
 # Target aliases.
 
+build TetrisTerminal: phony TetrisTerminal.exe
+
 build component: phony _deps/ftxui-build/libftxui-component.a
 
 build dom: phony _deps/ftxui-build/libftxui-dom.a
@@ -1297,8 +1295,6 @@ build libftxui-component.a: phony _deps/ftxui-build/libftxui-component.a
 build libftxui-dom.a: phony _deps/ftxui-build/libftxui-dom.a
 
 build libftxui-screen.a: phony _deps/ftxui-build/libftxui-screen.a
-
-build my_tui_app: phony my_tui_app.exe
 
 build screen: phony _deps/ftxui-build/libftxui-screen.a
 
@@ -1310,7 +1306,7 @@ build screen: phony _deps/ftxui-build/libftxui-screen.a
 #############################################
 # Folder: E:/My_personal_project/tetris-terminal/build
 
-build all: phony my_tui_app.exe _deps/ftxui-build/all
+build all: phony TetrisTerminal.exe _deps/ftxui-build/all
 
 # =============================================================================
 

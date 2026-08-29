@@ -65,17 +65,10 @@
 5602	7144	8096171171260832	_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/radiobox.cpp.obj	7cade02ac9ea1e4b
 6108	7149	8096171176322121	_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/util.cpp.obj	8302d2ec37ed5641
 5718	7418	8096171172459078	_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/resizable_split.cpp.obj	3bc0baacb68deb3e
-6229	7418	8096171177527503	CMakeFiles/my_tui_app.dir/main.cpp.obj	f509a23143819597
 5166	7540	8096171166915368	_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/menu.cpp.obj	9c6311425722a54d
 6098	7591	8096171176226859	_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/terminal_input_parser.cpp.obj	4b40239f035a3dc8
 6159	7761	8096171176824582	_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/window.cpp.obj	6b3da0cdfb10adbd
 5811	8150	8096171173342840	_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/slider.cpp.obj	2db0bb2a2b01c2db
 5746	8644	8096171172704358	_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/screen_interactive.cpp.obj	8c685ba787e9ffb8
 8645	8859	8096171201689394	_deps/ftxui-build/libftxui-component.a	5e42bf39726e9d34
-8859	8976	8096171203806068	my_tui_app.exe	6c40ec9222abbd52
-6	399	8096173162035733	CMakeFiles/my_tui_app.dir/main.cpp.obj	f509a23143819597
-399	516	8096173165965812	my_tui_app.exe	6c40ec9222abbd52
-18	713	8096173317426860	CMakeFiles/my_tui_app.dir/main.cpp.obj	f509a23143819597
-714	874	8096173324386994	my_tui_app.exe	6c40ec9222abbd52
-19	717	8096173584750944	CMakeFiles/my_tui_app.dir/main.cpp.obj	f509a23143819597
 717	906	8096173591721314	my_tui_app.exe	6c40ec9222abbd52
