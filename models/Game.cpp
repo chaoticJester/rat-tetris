@@ -85,7 +85,7 @@ bool Game::rotate(Direction dir) {
 
 void Game::lock() {
     board.lockPiece(current.getBlocks(), current.getPieceType());
-    board.clearLines();
+    levelManager.addLines(board.clearLines());
     canHold = true; 
     spawn();
 }
@@ -127,4 +127,36 @@ bool Game::hold() {
         if(!isValidPosition(current)) gameOver = true;
     }
     return true;
+}
+
+PieceType Game::getCurrentType() const {
+    return current.getPieceType();
+}
+
+PieceType Game::getHoldType() const {
+    return currentHold.getPieceType();
+}
+
+std::array<PieceType, 5> Game::getNext5Pieces() const {
+    return pieceGenerator.peek5Next();
+}
+
+const Board& Game::getBoard() const {
+    return this->board;
+}
+
+int Game::getScore() const { 
+    return levelManager.getScore(); 
+}
+
+int Game::getLevel() const { 
+    return levelManager.getLevel(); 
+}
+
+int Game::getTotalLines() const { 
+    return levelManager.getTotalLines(); 
+}
+
+double Game::getFallDelay() const { 
+    return levelManager.getFallDelay(); 
 }

@@ -20,9 +20,9 @@ PieceType PieceGenerator::next() {
     return front;
 }
 
-std::array<PieceType,3> PieceGenerator::peek3Next() const {
-    std::array<PieceType,3> result;
-    for(int i = 0; i < 3; i++) {
+std::array<PieceType,5> PieceGenerator::peek5Next() const {
+    std::array<PieceType,5> result;
+    for(int i = 0; i < 5; i++) {
         result[i] = queue[i];
     }
     return result;

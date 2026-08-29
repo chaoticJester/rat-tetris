@@ -15,6 +15,6 @@ class PieceGenerator {
     public:
         PieceGenerator();
         PieceType next();
-        std::array<PieceType,3> peek3Next() const;
+        std::array<PieceType,5> peek5Next() const;
 
 };  

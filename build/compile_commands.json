@@ -1,0 +1,422 @@
+[
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o CMakeFiles\\TetrisTerminal.dir\\main.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\main.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/main.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/CMakeFiles/TetrisTerminal.dir/main.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\screen.dir\\src\\ftxui\\screen\\box.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\screen\\box.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/screen/box.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/box.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\screen.dir\\src\\ftxui\\screen\\color.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\screen\\color.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/screen/color.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/color.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\screen.dir\\src\\ftxui\\screen\\color_info.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\screen\\color_info.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/screen/color_info.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/color_info.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\screen.dir\\src\\ftxui\\screen\\screen.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\screen\\screen.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/screen/screen.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/screen.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\screen.dir\\src\\ftxui\\screen\\string.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\screen\\string.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/screen/string.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/string.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\screen.dir\\src\\ftxui\\screen\\terminal.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\screen\\terminal.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/screen/terminal.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/terminal.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\automerge.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\automerge.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/automerge.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/automerge.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\blink.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\blink.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/blink.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/blink.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\bold.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\bold.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/bold.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/bold.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\hyperlink.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\hyperlink.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/hyperlink.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/hyperlink.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\border.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\border.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/border.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/border.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\box_helper.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\box_helper.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/box_helper.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/box_helper.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\canvas.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\canvas.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/canvas.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/canvas.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\clear_under.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\clear_under.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/clear_under.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/clear_under.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\color.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\color.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/color.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/color.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\composite_decorator.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\composite_decorator.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/composite_decorator.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/composite_decorator.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\dbox.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\dbox.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/dbox.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/dbox.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\dim.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\dim.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/dim.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/dim.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\flex.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\flex.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/flex.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/flex.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\flexbox.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\flexbox.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/flexbox.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/flexbox.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\flexbox_config.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\flexbox_config.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/flexbox_config.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/flexbox_config.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\flexbox_helper.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\flexbox_helper.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/flexbox_helper.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/flexbox_helper.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\focus.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\focus.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/focus.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/focus.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\frame.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\frame.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/frame.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/frame.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\gauge.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\gauge.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/gauge.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/gauge.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\graph.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\graph.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/graph.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/graph.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\gridbox.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\gridbox.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/gridbox.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/gridbox.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\hbox.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\hbox.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/hbox.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/hbox.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\inverted.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\inverted.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/inverted.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/inverted.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\linear_gradient.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\linear_gradient.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/linear_gradient.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/linear_gradient.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\node.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\node.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/node.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/node.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\node_decorator.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\node_decorator.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/node_decorator.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/node_decorator.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\paragraph.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\paragraph.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/paragraph.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/paragraph.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\reflect.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\reflect.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/reflect.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/reflect.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\scroll_indicator.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\scroll_indicator.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/scroll_indicator.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/scroll_indicator.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\separator.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\separator.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/separator.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/separator.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\size.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\size.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/size.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/size.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\spinner.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\spinner.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/spinner.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/spinner.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\strikethrough.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\strikethrough.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/strikethrough.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/strikethrough.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\table.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\table.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/table.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/table.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\text.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\text.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/text.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/text.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\underlined.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\underlined.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/underlined.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/underlined.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\underlined_double.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\underlined_double.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/underlined_double.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/underlined_double.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\util.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\util.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/util.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/util.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\vbox.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\vbox.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/vbox.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/vbox.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\animation.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\animation.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/animation.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/animation.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\button.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\button.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/button.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/button.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\catch_event.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\catch_event.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/catch_event.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/catch_event.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\checkbox.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\checkbox.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/checkbox.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/checkbox.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\collapsible.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\collapsible.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/collapsible.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/collapsible.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\component.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\component.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/component.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/component.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\component_options.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\component_options.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/component_options.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/component_options.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\container.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\container.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/container.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/container.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\dropdown.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\dropdown.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/dropdown.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/dropdown.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\event.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\event.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/event.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/event.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\hoverable.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\hoverable.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/hoverable.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/hoverable.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\input.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\input.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/input.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/input.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\loop.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\loop.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/loop.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/loop.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\maybe.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\maybe.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/maybe.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/maybe.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\menu.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\menu.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/menu.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/menu.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\modal.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\modal.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/modal.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/modal.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\radiobox.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\radiobox.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/radiobox.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/radiobox.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\renderer.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\renderer.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/renderer.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/renderer.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\resizable_split.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\resizable_split.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/resizable_split.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/resizable_split.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\screen_interactive.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\screen_interactive.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/screen_interactive.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/screen_interactive.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\slider.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\slider.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/slider.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/slider.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\terminal_input_parser.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\terminal_input_parser.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/terminal_input_parser.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/terminal_input_parser.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\util.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\util.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/util.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/util.cpp.obj"
+},
+{
+  "directory": "E:/My_personal_project/tetris-terminal/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include -g -std=gnu++17 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\window.cpp.obj -c E:\\My_personal_project\\tetris-terminal\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\window.cpp",
+  "file": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/window.cpp",
+  "output": "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/window.cpp.obj"
+}
+]

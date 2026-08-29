@@ -3,6 +3,7 @@
 
 #include "Board.h"
 #include "../handlers/PieceGenerator.h"
+#include "../handlers/LevelManager.h"
 #include "Tetromino.h"
 #include <array>
 
@@ -11,6 +12,7 @@ class Game {
     private:
         Board board;
         PieceGenerator pieceGenerator;
+        LevelManager levelManager;
         Tetromino current;
         Tetromino currentHold;
         bool gameOver = false;
@@ -30,4 +32,12 @@ class Game {
         void tick();
         bool isGameOver() const;
         bool hold();
+        PieceType getCurrentType() const;
+        PieceType getHoldType() const;
+        std::array<PieceType, 5> getNext5Pieces() const;
+        const Board& getBoard() const;
+        int getScore() const;
+        int getLevel() const;
+        int getTotalLines() const;
+        double getFallDelay() const;   
 };
