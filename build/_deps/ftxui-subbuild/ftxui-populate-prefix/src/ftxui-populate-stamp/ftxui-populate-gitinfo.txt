@@ -6,7 +6,7 @@ method=git
 command=C:/msys64/mingw64/bin/cmake.exe;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;E:/My_personal_project/tetris-terminal/build/_deps/ftxui-subbuild/ftxui-populate-prefix/tmp/ftxui-populate-gitclone.cmake
 source_dir=E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src
 work_dir=E:/My_personal_project/tetris-terminal/build/_deps
-repository=https://github.com/ArthurSonzogni/ftxui.git
+repository=https://github.com/ArthurSonzogni/FTXUI.git
 remote=origin
 init_submodules=TRUE
 recurse_submodules=--recursive

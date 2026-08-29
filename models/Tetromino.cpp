@@ -97,3 +97,7 @@ PieceType Tetromino::getPieceType() const {
 RotationState Tetromino::getRotationState() const {
     return this->rotateState;
 }
+
+std::array<Point,4> Tetromino::getLocalBlocks() const {
+    return ShapeDataTable[(int)pieceType][(int)rotateState];  // local ล้วน ไม่บวก position
+}

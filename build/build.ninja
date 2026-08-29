@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: my_tui_app
+# Project: Tetris
 # Configurations: 
 # =============================================================================
 
@@ -46,10 +46,70 @@ build cmake_object_order_depends_target_TetrisTerminal: phony || cmake_object_or
 
 build CMakeFiles/TetrisTerminal.dir/main.cpp.obj: CXX_COMPILER__TetrisTerminal_unscanned_ E$:/My_personal_project/tetris-terminal/main.cpp || cmake_object_order_depends_target_TetrisTerminal
   DEP_FILE = CMakeFiles\TetrisTerminal.dir\main.cpp.obj.d
-  FLAGS = -std=gnu++17
-  INCLUDES = -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
+  FLAGS = -std=c++17
+  INCLUDES = -IE:/My_personal_project/tetris-terminal -IE:/My_personal_project/tetris-terminal/models -IE:/My_personal_project/tetris-terminal/handlers -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = CMakeFiles\TetrisTerminal.dir
   OBJECT_FILE_DIR = CMakeFiles\TetrisTerminal.dir
+  TARGET_COMPILE_PDB = CMakeFiles\TetrisTerminal.dir\
+  TARGET_PDB = TetrisTerminal.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\TetrisTerminal.dir
+
+build CMakeFiles/TetrisTerminal.dir/models/Tetromino.cpp.obj: CXX_COMPILER__TetrisTerminal_unscanned_ E$:/My_personal_project/tetris-terminal/models/Tetromino.cpp || cmake_object_order_depends_target_TetrisTerminal
+  DEP_FILE = CMakeFiles\TetrisTerminal.dir\models\Tetromino.cpp.obj.d
+  FLAGS = -std=c++17
+  INCLUDES = -IE:/My_personal_project/tetris-terminal -IE:/My_personal_project/tetris-terminal/models -IE:/My_personal_project/tetris-terminal/handlers -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
+  OBJECT_DIR = CMakeFiles\TetrisTerminal.dir
+  OBJECT_FILE_DIR = CMakeFiles\TetrisTerminal.dir\models
+  TARGET_COMPILE_PDB = CMakeFiles\TetrisTerminal.dir\
+  TARGET_PDB = TetrisTerminal.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\TetrisTerminal.dir
+
+build CMakeFiles/TetrisTerminal.dir/models/Board.cpp.obj: CXX_COMPILER__TetrisTerminal_unscanned_ E$:/My_personal_project/tetris-terminal/models/Board.cpp || cmake_object_order_depends_target_TetrisTerminal
+  DEP_FILE = CMakeFiles\TetrisTerminal.dir\models\Board.cpp.obj.d
+  FLAGS = -std=c++17
+  INCLUDES = -IE:/My_personal_project/tetris-terminal -IE:/My_personal_project/tetris-terminal/models -IE:/My_personal_project/tetris-terminal/handlers -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
+  OBJECT_DIR = CMakeFiles\TetrisTerminal.dir
+  OBJECT_FILE_DIR = CMakeFiles\TetrisTerminal.dir\models
+  TARGET_COMPILE_PDB = CMakeFiles\TetrisTerminal.dir\
+  TARGET_PDB = TetrisTerminal.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\TetrisTerminal.dir
+
+build CMakeFiles/TetrisTerminal.dir/models/Game.cpp.obj: CXX_COMPILER__TetrisTerminal_unscanned_ E$:/My_personal_project/tetris-terminal/models/Game.cpp || cmake_object_order_depends_target_TetrisTerminal
+  DEP_FILE = CMakeFiles\TetrisTerminal.dir\models\Game.cpp.obj.d
+  FLAGS = -std=c++17
+  INCLUDES = -IE:/My_personal_project/tetris-terminal -IE:/My_personal_project/tetris-terminal/models -IE:/My_personal_project/tetris-terminal/handlers -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
+  OBJECT_DIR = CMakeFiles\TetrisTerminal.dir
+  OBJECT_FILE_DIR = CMakeFiles\TetrisTerminal.dir\models
+  TARGET_COMPILE_PDB = CMakeFiles\TetrisTerminal.dir\
+  TARGET_PDB = TetrisTerminal.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\TetrisTerminal.dir
+
+build CMakeFiles/TetrisTerminal.dir/handlers/PieceGenerator.cpp.obj: CXX_COMPILER__TetrisTerminal_unscanned_ E$:/My_personal_project/tetris-terminal/handlers/PieceGenerator.cpp || cmake_object_order_depends_target_TetrisTerminal
+  DEP_FILE = CMakeFiles\TetrisTerminal.dir\handlers\PieceGenerator.cpp.obj.d
+  FLAGS = -std=c++17
+  INCLUDES = -IE:/My_personal_project/tetris-terminal -IE:/My_personal_project/tetris-terminal/models -IE:/My_personal_project/tetris-terminal/handlers -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
+  OBJECT_DIR = CMakeFiles\TetrisTerminal.dir
+  OBJECT_FILE_DIR = CMakeFiles\TetrisTerminal.dir\handlers
+  TARGET_COMPILE_PDB = CMakeFiles\TetrisTerminal.dir\
+  TARGET_PDB = TetrisTerminal.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\TetrisTerminal.dir
+
+build CMakeFiles/TetrisTerminal.dir/handlers/LevelManager.cpp.obj: CXX_COMPILER__TetrisTerminal_unscanned_ E$:/My_personal_project/tetris-terminal/handlers/LevelManager.cpp || cmake_object_order_depends_target_TetrisTerminal
+  DEP_FILE = CMakeFiles\TetrisTerminal.dir\handlers\LevelManager.cpp.obj.d
+  FLAGS = -std=c++17
+  INCLUDES = -IE:/My_personal_project/tetris-terminal -IE:/My_personal_project/tetris-terminal/models -IE:/My_personal_project/tetris-terminal/handlers -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
+  OBJECT_DIR = CMakeFiles\TetrisTerminal.dir
+  OBJECT_FILE_DIR = CMakeFiles\TetrisTerminal.dir\handlers
+  TARGET_COMPILE_PDB = CMakeFiles\TetrisTerminal.dir\
+  TARGET_PDB = TetrisTerminal.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\TetrisTerminal.dir
+
+build CMakeFiles/TetrisTerminal.dir/handlers/Renderer.cpp.obj: CXX_COMPILER__TetrisTerminal_unscanned_ E$:/My_personal_project/tetris-terminal/handlers/Renderer.cpp || cmake_object_order_depends_target_TetrisTerminal
+  DEP_FILE = CMakeFiles\TetrisTerminal.dir\handlers\Renderer.cpp.obj.d
+  FLAGS = -std=c++17
+  INCLUDES = -IE:/My_personal_project/tetris-terminal -IE:/My_personal_project/tetris-terminal/models -IE:/My_personal_project/tetris-terminal/handlers -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
+  OBJECT_DIR = CMakeFiles\TetrisTerminal.dir
+  OBJECT_FILE_DIR = CMakeFiles\TetrisTerminal.dir\handlers
   TARGET_COMPILE_PDB = CMakeFiles\TetrisTerminal.dir\
   TARGET_PDB = TetrisTerminal.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\TetrisTerminal.dir
@@ -62,8 +122,8 @@ build CMakeFiles/TetrisTerminal.dir/main.cpp.obj: CXX_COMPILER__TetrisTerminal_u
 #############################################
 # Link the executable TetrisTerminal.exe
 
-build TetrisTerminal.exe: CXX_EXECUTABLE_LINKER__TetrisTerminal_ CMakeFiles/TetrisTerminal.dir/main.cpp.obj | _deps/ftxui-build/libftxui-screen.a _deps/ftxui-build/libftxui-dom.a _deps/ftxui-build/libftxui-component.a _deps/ftxui-build/libftxui-dom.a _deps/ftxui-build/libftxui-screen.a || _deps/ftxui-build/libftxui-component.a _deps/ftxui-build/libftxui-dom.a _deps/ftxui-build/libftxui-screen.a
-  LINK_LIBRARIES = _deps/ftxui-build/libftxui-screen.a  _deps/ftxui-build/libftxui-dom.a  _deps/ftxui-build/libftxui-component.a  _deps/ftxui-build/libftxui-dom.a  _deps/ftxui-build/libftxui-screen.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+build TetrisTerminal.exe: CXX_EXECUTABLE_LINKER__TetrisTerminal_ CMakeFiles/TetrisTerminal.dir/main.cpp.obj CMakeFiles/TetrisTerminal.dir/models/Tetromino.cpp.obj CMakeFiles/TetrisTerminal.dir/models/Board.cpp.obj CMakeFiles/TetrisTerminal.dir/models/Game.cpp.obj CMakeFiles/TetrisTerminal.dir/handlers/PieceGenerator.cpp.obj CMakeFiles/TetrisTerminal.dir/handlers/LevelManager.cpp.obj CMakeFiles/TetrisTerminal.dir/handlers/Renderer.cpp.obj | _deps/ftxui-build/libftxui-component.a _deps/ftxui-build/libftxui-dom.a _deps/ftxui-build/libftxui-screen.a || _deps/ftxui-build/libftxui-component.a _deps/ftxui-build/libftxui-dom.a _deps/ftxui-build/libftxui-screen.a
+  LINK_LIBRARIES = _deps/ftxui-build/libftxui-component.a  _deps/ftxui-build/libftxui-dom.a  _deps/ftxui-build/libftxui-screen.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\TetrisTerminal.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -179,7 +239,7 @@ build cmake_object_order_depends_target_screen: phony || .
 build _deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/box.cpp.obj: CXX_COMPILER__screen_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/screen/box.cpp || cmake_object_order_depends_target_screen
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\screen.dir\src\ftxui\screen\box.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\screen.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\screen.dir\src\ftxui\screen
@@ -190,7 +250,7 @@ build _deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/box.cpp.obj: CXX_
 build _deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/color.cpp.obj: CXX_COMPILER__screen_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/screen/color.cpp || cmake_object_order_depends_target_screen
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\screen.dir\src\ftxui\screen\color.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\screen.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\screen.dir\src\ftxui\screen
@@ -201,7 +261,7 @@ build _deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/color.cpp.obj: CX
 build _deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/color_info.cpp.obj: CXX_COMPILER__screen_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/screen/color_info.cpp || cmake_object_order_depends_target_screen
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\screen.dir\src\ftxui\screen\color_info.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\screen.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\screen.dir\src\ftxui\screen
@@ -212,7 +272,7 @@ build _deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/color_info.cpp.ob
 build _deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/screen.cpp.obj: CXX_COMPILER__screen_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/screen/screen.cpp || cmake_object_order_depends_target_screen
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\screen.dir\src\ftxui\screen\screen.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\screen.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\screen.dir\src\ftxui\screen
@@ -223,7 +283,7 @@ build _deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/screen.cpp.obj: C
 build _deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/string.cpp.obj: CXX_COMPILER__screen_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/screen/string.cpp || cmake_object_order_depends_target_screen
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\screen.dir\src\ftxui\screen\string.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\screen.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\screen.dir\src\ftxui\screen
@@ -234,7 +294,7 @@ build _deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/string.cpp.obj: C
 build _deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/terminal.cpp.obj: CXX_COMPILER__screen_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/screen/terminal.cpp || cmake_object_order_depends_target_screen
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\screen.dir\src\ftxui\screen\terminal.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\screen.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\screen.dir\src\ftxui\screen
@@ -271,7 +331,7 @@ build cmake_object_order_depends_target_dom: phony || cmake_object_order_depends
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/automerge.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/automerge.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\automerge.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -282,7 +342,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/automerge.cpp.obj: CXX_
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/blink.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/blink.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\blink.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -293,7 +353,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/blink.cpp.obj: CXX_COMP
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/bold.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/bold.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\bold.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -304,7 +364,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/bold.cpp.obj: CXX_COMPI
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/hyperlink.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/hyperlink.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\hyperlink.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -315,7 +375,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/hyperlink.cpp.obj: CXX_
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/border.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/border.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\border.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -326,7 +386,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/border.cpp.obj: CXX_COM
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/box_helper.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/box_helper.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\box_helper.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -337,7 +397,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/box_helper.cpp.obj: CXX
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/canvas.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/canvas.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\canvas.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -348,7 +408,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/canvas.cpp.obj: CXX_COM
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/clear_under.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/clear_under.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\clear_under.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -359,7 +419,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/clear_under.cpp.obj: CX
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/color.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/color.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\color.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -370,7 +430,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/color.cpp.obj: CXX_COMP
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/composite_decorator.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/composite_decorator.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\composite_decorator.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -381,7 +441,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/composite_decorator.cpp
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/dbox.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/dbox.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\dbox.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -392,7 +452,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/dbox.cpp.obj: CXX_COMPI
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/dim.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/dim.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\dim.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -403,7 +463,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/dim.cpp.obj: CXX_COMPIL
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/flex.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/flex.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\flex.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -414,7 +474,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/flex.cpp.obj: CXX_COMPI
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/flexbox.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/flexbox.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\flexbox.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -425,7 +485,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/flexbox.cpp.obj: CXX_CO
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/flexbox_config.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/flexbox_config.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\flexbox_config.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -436,7 +496,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/flexbox_config.cpp.obj:
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/flexbox_helper.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/flexbox_helper.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\flexbox_helper.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -447,7 +507,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/flexbox_helper.cpp.obj:
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/focus.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/focus.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\focus.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -458,7 +518,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/focus.cpp.obj: CXX_COMP
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/frame.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/frame.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\frame.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -469,7 +529,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/frame.cpp.obj: CXX_COMP
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/gauge.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/gauge.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\gauge.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -480,7 +540,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/gauge.cpp.obj: CXX_COMP
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/graph.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/graph.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\graph.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -491,7 +551,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/graph.cpp.obj: CXX_COMP
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/gridbox.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/gridbox.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\gridbox.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -502,7 +562,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/gridbox.cpp.obj: CXX_CO
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/hbox.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/hbox.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\hbox.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -513,7 +573,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/hbox.cpp.obj: CXX_COMPI
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/inverted.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/inverted.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\inverted.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -524,7 +584,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/inverted.cpp.obj: CXX_C
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/linear_gradient.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/linear_gradient.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\linear_gradient.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -535,7 +595,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/linear_gradient.cpp.obj
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/node.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/node.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\node.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -546,7 +606,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/node.cpp.obj: CXX_COMPI
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/node_decorator.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/node_decorator.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\node_decorator.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -557,7 +617,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/node_decorator.cpp.obj:
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/paragraph.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/paragraph.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\paragraph.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -568,7 +628,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/paragraph.cpp.obj: CXX_
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/reflect.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/reflect.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\reflect.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -579,7 +639,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/reflect.cpp.obj: CXX_CO
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/scroll_indicator.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/scroll_indicator.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\scroll_indicator.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -590,7 +650,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/scroll_indicator.cpp.ob
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/separator.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/separator.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\separator.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -601,7 +661,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/separator.cpp.obj: CXX_
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/size.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/size.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\size.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -612,7 +672,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/size.cpp.obj: CXX_COMPI
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/spinner.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/spinner.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\spinner.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -623,7 +683,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/spinner.cpp.obj: CXX_CO
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/strikethrough.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/strikethrough.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\strikethrough.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -634,7 +694,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/strikethrough.cpp.obj: 
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/table.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/table.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\table.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -645,7 +705,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/table.cpp.obj: CXX_COMP
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/text.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/text.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\text.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -656,7 +716,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/text.cpp.obj: CXX_COMPI
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/underlined.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/underlined.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\underlined.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -667,7 +727,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/underlined.cpp.obj: CXX
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/underlined_double.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/underlined_double.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\underlined_double.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -678,7 +738,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/underlined_double.cpp.o
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/util.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/util.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\util.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -689,7 +749,7 @@ build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/util.cpp.obj: CXX_COMPI
 build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/vbox.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/vbox.cpp || cmake_object_order_depends_target_dom
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\vbox.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
@@ -726,7 +786,7 @@ build cmake_object_order_depends_target_component: phony || cmake_object_order_d
 build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/animation.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/animation.cpp || cmake_object_order_depends_target_component
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\animation.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
@@ -737,7 +797,7 @@ build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/animation.c
 build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/button.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/button.cpp || cmake_object_order_depends_target_component
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\button.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
@@ -748,7 +808,7 @@ build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/button.cpp.
 build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/catch_event.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/catch_event.cpp || cmake_object_order_depends_target_component
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\catch_event.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
@@ -759,7 +819,7 @@ build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/catch_event
 build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/checkbox.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/checkbox.cpp || cmake_object_order_depends_target_component
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\checkbox.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
@@ -770,7 +830,7 @@ build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/checkbox.cp
 build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/collapsible.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/collapsible.cpp || cmake_object_order_depends_target_component
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\collapsible.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
@@ -781,7 +841,7 @@ build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/collapsible
 build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/component.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/component.cpp || cmake_object_order_depends_target_component
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\component.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
@@ -792,7 +852,7 @@ build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/component.c
 build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/component_options.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/component_options.cpp || cmake_object_order_depends_target_component
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\component_options.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
@@ -803,7 +863,7 @@ build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/component_o
 build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/container.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/container.cpp || cmake_object_order_depends_target_component
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\container.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
@@ -814,7 +874,7 @@ build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/container.c
 build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/dropdown.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/dropdown.cpp || cmake_object_order_depends_target_component
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\dropdown.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
@@ -825,7 +885,7 @@ build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/dropdown.cp
 build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/event.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/event.cpp || cmake_object_order_depends_target_component
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\event.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
@@ -836,7 +896,7 @@ build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/event.cpp.o
 build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/hoverable.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/hoverable.cpp || cmake_object_order_depends_target_component
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\hoverable.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
@@ -847,7 +907,7 @@ build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/hoverable.c
 build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/input.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/input.cpp || cmake_object_order_depends_target_component
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\input.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
@@ -858,7 +918,7 @@ build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/input.cpp.o
 build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/loop.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/loop.cpp || cmake_object_order_depends_target_component
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\loop.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
@@ -869,7 +929,7 @@ build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/loop.cpp.ob
 build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/maybe.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/maybe.cpp || cmake_object_order_depends_target_component
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\maybe.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
@@ -880,7 +940,7 @@ build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/maybe.cpp.o
 build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/menu.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/menu.cpp || cmake_object_order_depends_target_component
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\menu.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
@@ -891,7 +951,7 @@ build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/menu.cpp.ob
 build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/modal.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/modal.cpp || cmake_object_order_depends_target_component
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\modal.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
@@ -902,7 +962,7 @@ build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/modal.cpp.o
 build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/radiobox.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/radiobox.cpp || cmake_object_order_depends_target_component
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\radiobox.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
@@ -913,7 +973,7 @@ build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/radiobox.cp
 build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/renderer.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/renderer.cpp || cmake_object_order_depends_target_component
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\renderer.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
@@ -924,7 +984,7 @@ build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/renderer.cp
 build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/resizable_split.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/resizable_split.cpp || cmake_object_order_depends_target_component
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\resizable_split.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
@@ -935,7 +995,7 @@ build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/resizable_s
 build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/screen_interactive.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/screen_interactive.cpp || cmake_object_order_depends_target_component
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\screen_interactive.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
@@ -946,7 +1006,7 @@ build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/screen_inte
 build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/slider.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/slider.cpp || cmake_object_order_depends_target_component
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\slider.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
@@ -957,7 +1017,7 @@ build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/slider.cpp.
 build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/terminal_input_parser.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/terminal_input_parser.cpp || cmake_object_order_depends_target_component
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\terminal_input_parser.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
@@ -968,7 +1028,7 @@ build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/terminal_in
 build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/util.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/util.cpp || cmake_object_order_depends_target_component
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\util.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
@@ -979,7 +1039,7 @@ build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/util.cpp.ob
 build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/window.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/window.cpp || cmake_object_order_depends_target_component
   DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
   DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\window.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=c++17
   INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
   OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
   OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component

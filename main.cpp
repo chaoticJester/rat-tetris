@@ -1,28 +1,31 @@
-#include <ftxui/component/component.hpp>
-#include <ftxui/component/screen_interactive.hpp>
-
-using namespace ftxui;
+#include "models/Game.h"
+#include "handlers/Renderer.h"
+#include <ftxui/screen/screen.hpp>      // Screen, Dimension
+#include <ftxui/dom/node.hpp>           // Render
+#include <iostream>
 
 int main() {
-    std::string name;
-    auto input = Input(&name, "พิมพ์ชื่อ...");
+    Game game;
+    Renderer renderer;
+    
+    game.hardDrop();
+    game.hardDrop();
+    game.hold();
 
-    std::vector<std::string> options = {"ตัวเลือก 1", "ตัวเลือก 2", "ตัวเลือก 3"};
-    int selected = 0;
-    auto menu = Menu(&options, &selected);
-
-    auto layout = Container::Vertical({input, menu});
-
-    auto renderer = Renderer(layout, [&] {
-        return vbox({
-            text("ชื่อ: " + name),
-            separator(),
-            input->Render(),
-            separator(),
-            menu->Render(),
-        }) | border;
+    ftxui::Element document = ftxui::hbox({
+        ftxui::vbox({
+            renderer.renderHold(game),
+            renderer.renderStats(game)
+        }),
+        renderer.renderBoard(game),
+        renderer.renderNext(game)
     });
 
-    auto screen = ScreenInteractive::TerminalOutput();
-    screen.Loop(renderer);
+    auto screen = ftxui::Screen::Create(
+        ftxui::Dimension::Fit(document)    // ขนาดพอดีกับ element
+    );
+    ftxui::Render(screen, document);       // วาด element ลง screen
+    screen.Print();                        // พ่นออก terminal
+    std::cout << std::endl;                // ขึ้นบรรทัดใหม่ให้ prompt ไม่ทับ
+    return 0;
 }

@@ -34,4 +34,5 @@ class Tetromino {
         void rotate(Direction dir);
         PieceType getPieceType() const;
         RotationState getRotationState() const;
+        std::array<Point,4> getLocalBlocks() const;
 };

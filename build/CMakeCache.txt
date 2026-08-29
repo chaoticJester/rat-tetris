@@ -28,7 +28,7 @@ CMAKE_AR:FILEPATH=C:/msys64/mingw64/bin/ar.exe
 CMAKE_BUILD_TYPE:STRING=
 
 //CXX compiler
-CMAKE_CXX_COMPILER:STRING=C:/msys64/mingw64/bin/g++.exe
+CMAKE_CXX_COMPILER:FILEPATH=C:/msys64/mingw64/bin/c++.exe
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -123,7 +123,7 @@ CMAKE_INSTALL_MANDIR:PATH=
 CMAKE_INSTALL_OLDINCLUDEDIR:PATH=/usr/include
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/my_tui_app
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/Tetris
 
 //Run-time variable data (LOCALSTATEDIR/run)
 CMAKE_INSTALL_RUNSTATEDIR:PATH=
@@ -182,7 +182,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=my_tui_app
+CMAKE_PROJECT_NAME:STATIC=Tetris
 
 //Value Computed by CMake
 CMAKE_PROJECT_SPDX_LICENSE:STATIC=
@@ -347,6 +347,15 @@ FTXUI_QUIET:BOOL=OFF
 GIT_EXECUTABLE:FILEPATH=C:/Program Files/Git/cmd/git.exe
 
 //Value Computed by CMake
+Tetris_BINARY_DIR:STATIC=E:/My_personal_project/tetris-terminal/build
+
+//Value Computed by CMake
+Tetris_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Tetris_SOURCE_DIR:STATIC=E:/My_personal_project/tetris-terminal
+
+//Value Computed by CMake
 ftxui_BINARY_DIR:STATIC=E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build
 
 //Value Computed by CMake
@@ -357,15 +366,6 @@ ftxui_SOURCE_DIR:STATIC=E:/My_personal_project/tetris-terminal/build/_deps/ftxui
 
 //Path to a program.
 iwyu_path:FILEPATH=iwyu_path-NOTFOUND
-
-//Value Computed by CMake
-my_tui_app_BINARY_DIR:STATIC=E:/My_personal_project/tetris-terminal/build
-
-//Value Computed by CMake
-my_tui_app_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-my_tui_app_SOURCE_DIR:STATIC=E:/My_personal_project/tetris-terminal
 
 
 ########################
@@ -410,7 +410,7 @@ CMAKE_CXX_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 CMAKE_CXX_STANDARD_LIBRARIES-ADVANCED:INTERNAL=1
 //Set initial state for CMake diagnostics; used to persist state
 // set by command-line options across invocations.
-CMAKE_DIAGNOSTIC_INIT:INTERNAL=CMD_AUTHOR=WARN;CMD_DEPRECATED=WARN;CMD_EXPERIMENTAL=WARN;CMD_INSTALL_ABSOLUTE_DESTINATION=IGNORE;CMD_POLICY=WARN;CMD_UNINITIALIZED=IGNORE;CMD_UNUSED_CLI=IGNORE
+CMAKE_DIAGNOSTIC_INIT:INTERNAL=CMD_AUTHOR=WARN;CMD_DEPRECATED=WARN;CMD_EXPERIMENTAL=WARN;CMD_INSTALL_ABSOLUTE_DESTINATION=IGNORE;CMD_POLICY=WARN;CMD_UNINITIALIZED=IGNORE;CMD_UNUSED_CLI=WARN
 //ADVANCED property for variable: CMAKE_DLLTOOL
 CMAKE_DLLTOOL-ADVANCED:INTERNAL=1
 //Deprecated.  Use -W[no-]error=deprecated instead.
@@ -564,5 +564,5 @@ FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //ADVANCED property for variable: GIT_EXECUTABLE
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
-_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files (x86)/my_tui_app
+_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files (x86)/Tetris
 

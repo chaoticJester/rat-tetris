@@ -27,7 +27,7 @@ set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
 
 include(ExternalProject)
 ExternalProject_Add(ftxui-populate
-                     "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/ArthurSonzogni/ftxui.git" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "GIT_TAG" "v5.0.0"
+                     "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/ArthurSonzogni/FTXUI.git" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "GIT_TAG" "v5.0.0"
                     SOURCE_DIR          "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src"
                     BINARY_DIR          "E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build"
                     CONFIGURE_COMMAND   ""
