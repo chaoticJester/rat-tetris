@@ -22,6 +22,6 @@ class Board {
         int getVisibleHeight() const;
         int getTotalHeight() const;
         bool isRowFull(int y) const;
-        void lockPiece();
-        void clearLines();
+        void lockPiece(const std::array<Point,4>& blocks, PieceType type);
+        int clearLines();
 };
