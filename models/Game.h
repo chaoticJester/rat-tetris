@@ -12,13 +12,15 @@ class Game {
         Board board;
         PieceGenerator pieceGenerator;
         Tetromino current;
+        Tetromino currentHold;
         bool gameOver = false;
+        bool canHold = true;    
     
     public:
         Game();
         bool isValidPosition(const Tetromino& piece) const;
         std::array<Point,4> getCurrentBlocks() const;
-        void spawn();
+        bool spawn();
         bool moveRight();
         bool moveLeft();
         bool softDrop();
@@ -27,4 +29,5 @@ class Game {
         bool hardDrop();
         void tick();
         bool isGameOver() const;
+        bool hold();
 };

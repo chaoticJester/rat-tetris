@@ -1,7 +1,7 @@
 #include "Game.h"
 #include "SRS.h"
 
-Game::Game() : current(pieceGenerator.next()) {}
+Game::Game() : current(pieceGenerator.next()), currentHold(Tetromino(PieceType::Empty)) {}
 
 bool Game::isValidPosition(const Tetromino& piece) const {
     std::array<Point, 4> currentPosi = piece.getBlocks();
@@ -17,11 +17,13 @@ std::array<Point,4> Game::getCurrentBlocks() const {
     return current.getBlocks();
 }
 
-void Game::spawn() {
+bool Game::spawn() {
     current = Tetromino(pieceGenerator.next());
     if (!isValidPosition(current)) { // ชิ้นใหม่ทับบล็อกเดิมตั้งแต่เกิด
-        gameOver = true;             // = จบเกม
+        gameOver = true;    
+        return false   ;      // = จบเกม
     } 
+    return true;
 }
 
 bool Game::moveRight() {
@@ -84,6 +86,7 @@ bool Game::rotate(Direction dir) {
 void Game::lock() {
     board.lockPiece(current.getBlocks(), current.getPieceType());
     board.clearLines();
+    canHold = true; 
     spawn();
 }
 
@@ -106,4 +109,22 @@ void Game::tick() {
 
 bool Game::isGameOver() const {
     return this->gameOver;
+}
+
+bool Game::hold() {
+    if(gameOver) return false;
+    if(!canHold) return false;
+    canHold = false;                 
+
+    if(currentHold.getPieceType() == PieceType::Empty) {
+        currentHold = Tetromino(current.getPieceType());
+        return spawn();              
+    } else {
+        PieceType currentType = current.getPieceType();
+        PieceType holdType = currentHold.getPieceType();
+        current = Tetromino(holdType);
+        currentHold = Tetromino(currentType);
+        if(!isValidPosition(current)) gameOver = true;
+    }
+    return true;
 }
