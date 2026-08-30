@@ -14,7 +14,7 @@ set(BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 set(BUILD_GAMES    OFF CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(raylib)
 
-add_executable(RatTetris
+add_executable(RatTetris WIN32
     main.cpp
     models/Tetromino.cpp
     models/Board.cpp
