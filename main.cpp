@@ -8,6 +8,7 @@
 
 
 int main() {
+    SetTraceLogLevel(LOG_NONE);
     InitWindow(1280, 720 , "RatTetris");
     SetTargetFPS(60);
     InitAudioDevice(); 
@@ -19,12 +20,11 @@ int main() {
     std::vector<std::string> musicLibrary;
     std::string line;
     while (std::getline(myFile, line)) {
-        std::cout << line << std::endl;
         musicLibrary.push_back(line.c_str());
     }
     
     if (musicLibrary.empty()) {
-        std::cout << "ไม่พบรายการเพลง!\n";
+        return 1;
         // จัดการ เช่นข้ามระบบเพลง
     }   
 
