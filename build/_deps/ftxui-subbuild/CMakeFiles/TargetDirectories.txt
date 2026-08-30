@@ -1,3 +1,0 @@
-E:/My_personal_project/tetris-terminal/build/_deps/ftxui-subbuild/CMakeFiles/ftxui-populate.dir
-E:/My_personal_project/tetris-terminal/build/_deps/ftxui-subbuild/CMakeFiles/edit_cache.dir
-E:/My_personal_project/tetris-terminal/build/_deps/ftxui-subbuild/CMakeFiles/rebuild_cache.dir

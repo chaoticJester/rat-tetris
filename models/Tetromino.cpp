@@ -61,7 +61,7 @@ const std::array<std::array<std::array<Point,4>,4>, 8> Tetromino::ShapeDataTable
     }},
 }};
 
-Tetromino::Tetromino(PieceType t) : pieceType(t), rotateState(RotationState::SPAWN), position{3,21} {}
+Tetromino::Tetromino(PieceType t) : pieceType(t), rotateState(RotationState::SPAWN), position{3,18} {}
 
 std::array<Point,4> Tetromino::getBlocks() const { 
     std::array<Point,4> local = ShapeDataTable[static_cast<int>(pieceType)][static_cast<int>(rotateState)];

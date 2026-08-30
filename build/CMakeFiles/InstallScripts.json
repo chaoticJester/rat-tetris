@@ -1,10 +1,11 @@
 {
 	"InstallScripts" : 
 	[
-		"E:/My_personal_project/tetris-terminal/build/cmake_install.cmake",
-		"E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/cmake_install.cmake",
-		"E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/examples/cmake_install.cmake",
-		"E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/doc/cmake_install.cmake"
+		"E:/My_personal_project/tetris/build/cmake_install.cmake",
+		"E:/My_personal_project/tetris/build/_deps/raylib-build/cmake_install.cmake",
+		"E:/My_personal_project/tetris/build/_deps/raylib-build/raylib/cmake_install.cmake",
+		"E:/My_personal_project/tetris/build/_deps/raylib-build/raylib/external/glfw/cmake_install.cmake",
+		"E:/My_personal_project/tetris/build/_deps/raylib-build/raylib/external/glfw/src/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

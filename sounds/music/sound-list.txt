@@ -1,0 +1,3 @@
+sounds/music/theme1.mp3
+sounds/music/theme2.mp3
+sounds/music/theme3.mp3

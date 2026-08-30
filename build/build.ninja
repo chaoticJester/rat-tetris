@@ -12,7 +12,7 @@
 
 # =============================================================================
 # Project: Tetris
-# Configurations: 
+# Configurations: Debug
 # =============================================================================
 
 #############################################
@@ -20,6 +20,11 @@
 
 ninja_required_version = 1.5
 
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
 # =============================================================================
 # Include auxiliary files.
 
@@ -34,111 +39,112 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = E$:/My_personal_project/tetris-terminal/build/
+cmake_ninja_workdir = E$:/My_personal_project/tetris/build/
 # =============================================================================
-# Object build statements for EXECUTABLE target TetrisTerminal
+# Object build statements for EXECUTABLE target RatTetris
 
 
 #############################################
-# Order-only phony target for TetrisTerminal
+# Order-only phony target for RatTetris
 
-build cmake_object_order_depends_target_TetrisTerminal: phony || cmake_object_order_depends_target_component cmake_object_order_depends_target_dom cmake_object_order_depends_target_screen
+build cmake_object_order_depends_target_RatTetris: phony || cmake_object_order_depends_target_glfw cmake_object_order_depends_target_raylib
 
-build CMakeFiles/TetrisTerminal.dir/main.cpp.obj: CXX_COMPILER__TetrisTerminal_unscanned_ E$:/My_personal_project/tetris-terminal/main.cpp || cmake_object_order_depends_target_TetrisTerminal
-  DEP_FILE = CMakeFiles\TetrisTerminal.dir\main.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal -IE:/My_personal_project/tetris-terminal/models -IE:/My_personal_project/tetris-terminal/handlers -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = CMakeFiles\TetrisTerminal.dir
-  OBJECT_FILE_DIR = CMakeFiles\TetrisTerminal.dir
-  TARGET_COMPILE_PDB = CMakeFiles\TetrisTerminal.dir\
-  TARGET_PDB = TetrisTerminal.pdb
-  TARGET_SUPPORT_DIR = CMakeFiles\TetrisTerminal.dir
+build CMakeFiles/RatTetris.dir/main.cpp.obj: CXX_COMPILER__RatTetris_unscanned_Debug E$:/My_personal_project/tetris/main.cpp || cmake_object_order_depends_target_RatTetris
+  CONFIG = Debug
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = CMakeFiles\RatTetris.dir\main.cpp.obj.d
+  FLAGS = -g -std=c++17
+  INCLUDES = -IE:/My_personal_project/tetris -IE:/My_personal_project/tetris/models -IE:/My_personal_project/tetris/handlers -IE:/My_personal_project/tetris/build/_deps/raylib-src/src -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include
+  OBJECT_DIR = CMakeFiles\RatTetris.dir
+  OBJECT_FILE_DIR = CMakeFiles\RatTetris.dir
+  TARGET_SUPPORT_DIR = CMakeFiles\RatTetris.dir
 
-build CMakeFiles/TetrisTerminal.dir/models/Tetromino.cpp.obj: CXX_COMPILER__TetrisTerminal_unscanned_ E$:/My_personal_project/tetris-terminal/models/Tetromino.cpp || cmake_object_order_depends_target_TetrisTerminal
-  DEP_FILE = CMakeFiles\TetrisTerminal.dir\models\Tetromino.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal -IE:/My_personal_project/tetris-terminal/models -IE:/My_personal_project/tetris-terminal/handlers -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = CMakeFiles\TetrisTerminal.dir
-  OBJECT_FILE_DIR = CMakeFiles\TetrisTerminal.dir\models
-  TARGET_COMPILE_PDB = CMakeFiles\TetrisTerminal.dir\
-  TARGET_PDB = TetrisTerminal.pdb
-  TARGET_SUPPORT_DIR = CMakeFiles\TetrisTerminal.dir
+build CMakeFiles/RatTetris.dir/models/Tetromino.cpp.obj: CXX_COMPILER__RatTetris_unscanned_Debug E$:/My_personal_project/tetris/models/Tetromino.cpp || cmake_object_order_depends_target_RatTetris
+  CONFIG = Debug
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = CMakeFiles\RatTetris.dir\models\Tetromino.cpp.obj.d
+  FLAGS = -g -std=c++17
+  INCLUDES = -IE:/My_personal_project/tetris -IE:/My_personal_project/tetris/models -IE:/My_personal_project/tetris/handlers -IE:/My_personal_project/tetris/build/_deps/raylib-src/src -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include
+  OBJECT_DIR = CMakeFiles\RatTetris.dir
+  OBJECT_FILE_DIR = CMakeFiles\RatTetris.dir\models
+  TARGET_SUPPORT_DIR = CMakeFiles\RatTetris.dir
 
-build CMakeFiles/TetrisTerminal.dir/models/Board.cpp.obj: CXX_COMPILER__TetrisTerminal_unscanned_ E$:/My_personal_project/tetris-terminal/models/Board.cpp || cmake_object_order_depends_target_TetrisTerminal
-  DEP_FILE = CMakeFiles\TetrisTerminal.dir\models\Board.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal -IE:/My_personal_project/tetris-terminal/models -IE:/My_personal_project/tetris-terminal/handlers -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = CMakeFiles\TetrisTerminal.dir
-  OBJECT_FILE_DIR = CMakeFiles\TetrisTerminal.dir\models
-  TARGET_COMPILE_PDB = CMakeFiles\TetrisTerminal.dir\
-  TARGET_PDB = TetrisTerminal.pdb
-  TARGET_SUPPORT_DIR = CMakeFiles\TetrisTerminal.dir
+build CMakeFiles/RatTetris.dir/models/Board.cpp.obj: CXX_COMPILER__RatTetris_unscanned_Debug E$:/My_personal_project/tetris/models/Board.cpp || cmake_object_order_depends_target_RatTetris
+  CONFIG = Debug
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = CMakeFiles\RatTetris.dir\models\Board.cpp.obj.d
+  FLAGS = -g -std=c++17
+  INCLUDES = -IE:/My_personal_project/tetris -IE:/My_personal_project/tetris/models -IE:/My_personal_project/tetris/handlers -IE:/My_personal_project/tetris/build/_deps/raylib-src/src -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include
+  OBJECT_DIR = CMakeFiles\RatTetris.dir
+  OBJECT_FILE_DIR = CMakeFiles\RatTetris.dir\models
+  TARGET_SUPPORT_DIR = CMakeFiles\RatTetris.dir
 
-build CMakeFiles/TetrisTerminal.dir/models/Game.cpp.obj: CXX_COMPILER__TetrisTerminal_unscanned_ E$:/My_personal_project/tetris-terminal/models/Game.cpp || cmake_object_order_depends_target_TetrisTerminal
-  DEP_FILE = CMakeFiles\TetrisTerminal.dir\models\Game.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal -IE:/My_personal_project/tetris-terminal/models -IE:/My_personal_project/tetris-terminal/handlers -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = CMakeFiles\TetrisTerminal.dir
-  OBJECT_FILE_DIR = CMakeFiles\TetrisTerminal.dir\models
-  TARGET_COMPILE_PDB = CMakeFiles\TetrisTerminal.dir\
-  TARGET_PDB = TetrisTerminal.pdb
-  TARGET_SUPPORT_DIR = CMakeFiles\TetrisTerminal.dir
+build CMakeFiles/RatTetris.dir/models/Game.cpp.obj: CXX_COMPILER__RatTetris_unscanned_Debug E$:/My_personal_project/tetris/models/Game.cpp || cmake_object_order_depends_target_RatTetris
+  CONFIG = Debug
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = CMakeFiles\RatTetris.dir\models\Game.cpp.obj.d
+  FLAGS = -g -std=c++17
+  INCLUDES = -IE:/My_personal_project/tetris -IE:/My_personal_project/tetris/models -IE:/My_personal_project/tetris/handlers -IE:/My_personal_project/tetris/build/_deps/raylib-src/src -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include
+  OBJECT_DIR = CMakeFiles\RatTetris.dir
+  OBJECT_FILE_DIR = CMakeFiles\RatTetris.dir\models
+  TARGET_SUPPORT_DIR = CMakeFiles\RatTetris.dir
 
-build CMakeFiles/TetrisTerminal.dir/handlers/PieceGenerator.cpp.obj: CXX_COMPILER__TetrisTerminal_unscanned_ E$:/My_personal_project/tetris-terminal/handlers/PieceGenerator.cpp || cmake_object_order_depends_target_TetrisTerminal
-  DEP_FILE = CMakeFiles\TetrisTerminal.dir\handlers\PieceGenerator.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal -IE:/My_personal_project/tetris-terminal/models -IE:/My_personal_project/tetris-terminal/handlers -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = CMakeFiles\TetrisTerminal.dir
-  OBJECT_FILE_DIR = CMakeFiles\TetrisTerminal.dir\handlers
-  TARGET_COMPILE_PDB = CMakeFiles\TetrisTerminal.dir\
-  TARGET_PDB = TetrisTerminal.pdb
-  TARGET_SUPPORT_DIR = CMakeFiles\TetrisTerminal.dir
+build CMakeFiles/RatTetris.dir/handlers/PieceGenerator.cpp.obj: CXX_COMPILER__RatTetris_unscanned_Debug E$:/My_personal_project/tetris/handlers/PieceGenerator.cpp || cmake_object_order_depends_target_RatTetris
+  CONFIG = Debug
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = CMakeFiles\RatTetris.dir\handlers\PieceGenerator.cpp.obj.d
+  FLAGS = -g -std=c++17
+  INCLUDES = -IE:/My_personal_project/tetris -IE:/My_personal_project/tetris/models -IE:/My_personal_project/tetris/handlers -IE:/My_personal_project/tetris/build/_deps/raylib-src/src -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include
+  OBJECT_DIR = CMakeFiles\RatTetris.dir
+  OBJECT_FILE_DIR = CMakeFiles\RatTetris.dir\handlers
+  TARGET_SUPPORT_DIR = CMakeFiles\RatTetris.dir
 
-build CMakeFiles/TetrisTerminal.dir/handlers/LevelManager.cpp.obj: CXX_COMPILER__TetrisTerminal_unscanned_ E$:/My_personal_project/tetris-terminal/handlers/LevelManager.cpp || cmake_object_order_depends_target_TetrisTerminal
-  DEP_FILE = CMakeFiles\TetrisTerminal.dir\handlers\LevelManager.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal -IE:/My_personal_project/tetris-terminal/models -IE:/My_personal_project/tetris-terminal/handlers -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = CMakeFiles\TetrisTerminal.dir
-  OBJECT_FILE_DIR = CMakeFiles\TetrisTerminal.dir\handlers
-  TARGET_COMPILE_PDB = CMakeFiles\TetrisTerminal.dir\
-  TARGET_PDB = TetrisTerminal.pdb
-  TARGET_SUPPORT_DIR = CMakeFiles\TetrisTerminal.dir
+build CMakeFiles/RatTetris.dir/handlers/LevelManager.cpp.obj: CXX_COMPILER__RatTetris_unscanned_Debug E$:/My_personal_project/tetris/handlers/LevelManager.cpp || cmake_object_order_depends_target_RatTetris
+  CONFIG = Debug
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = CMakeFiles\RatTetris.dir\handlers\LevelManager.cpp.obj.d
+  FLAGS = -g -std=c++17
+  INCLUDES = -IE:/My_personal_project/tetris -IE:/My_personal_project/tetris/models -IE:/My_personal_project/tetris/handlers -IE:/My_personal_project/tetris/build/_deps/raylib-src/src -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include
+  OBJECT_DIR = CMakeFiles\RatTetris.dir
+  OBJECT_FILE_DIR = CMakeFiles\RatTetris.dir\handlers
+  TARGET_SUPPORT_DIR = CMakeFiles\RatTetris.dir
 
-build CMakeFiles/TetrisTerminal.dir/handlers/Renderer.cpp.obj: CXX_COMPILER__TetrisTerminal_unscanned_ E$:/My_personal_project/tetris-terminal/handlers/Renderer.cpp || cmake_object_order_depends_target_TetrisTerminal
-  DEP_FILE = CMakeFiles\TetrisTerminal.dir\handlers\Renderer.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal -IE:/My_personal_project/tetris-terminal/models -IE:/My_personal_project/tetris-terminal/handlers -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = CMakeFiles\TetrisTerminal.dir
-  OBJECT_FILE_DIR = CMakeFiles\TetrisTerminal.dir\handlers
-  TARGET_COMPILE_PDB = CMakeFiles\TetrisTerminal.dir\
-  TARGET_PDB = TetrisTerminal.pdb
-  TARGET_SUPPORT_DIR = CMakeFiles\TetrisTerminal.dir
+build CMakeFiles/RatTetris.dir/handlers/Renderer.cpp.obj: CXX_COMPILER__RatTetris_unscanned_Debug E$:/My_personal_project/tetris/handlers/Renderer.cpp || cmake_object_order_depends_target_RatTetris
+  CONFIG = Debug
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = CMakeFiles\RatTetris.dir\handlers\Renderer.cpp.obj.d
+  FLAGS = -g -std=c++17
+  INCLUDES = -IE:/My_personal_project/tetris -IE:/My_personal_project/tetris/models -IE:/My_personal_project/tetris/handlers -IE:/My_personal_project/tetris/build/_deps/raylib-src/src -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include
+  OBJECT_DIR = CMakeFiles\RatTetris.dir
+  OBJECT_FILE_DIR = CMakeFiles\RatTetris.dir\handlers
+  TARGET_SUPPORT_DIR = CMakeFiles\RatTetris.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target TetrisTerminal
+# Link build statements for EXECUTABLE target RatTetris
 
 
 #############################################
-# Link the executable TetrisTerminal.exe
+# Link the executable RatTetris.exe
 
-build TetrisTerminal.exe: CXX_EXECUTABLE_LINKER__TetrisTerminal_ CMakeFiles/TetrisTerminal.dir/main.cpp.obj CMakeFiles/TetrisTerminal.dir/models/Tetromino.cpp.obj CMakeFiles/TetrisTerminal.dir/models/Board.cpp.obj CMakeFiles/TetrisTerminal.dir/models/Game.cpp.obj CMakeFiles/TetrisTerminal.dir/handlers/PieceGenerator.cpp.obj CMakeFiles/TetrisTerminal.dir/handlers/LevelManager.cpp.obj CMakeFiles/TetrisTerminal.dir/handlers/Renderer.cpp.obj | _deps/ftxui-build/libftxui-component.a _deps/ftxui-build/libftxui-dom.a _deps/ftxui-build/libftxui-screen.a || _deps/ftxui-build/libftxui-component.a _deps/ftxui-build/libftxui-dom.a _deps/ftxui-build/libftxui-screen.a
-  LINK_LIBRARIES = _deps/ftxui-build/libftxui-component.a  _deps/ftxui-build/libftxui-dom.a  _deps/ftxui-build/libftxui-screen.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\TetrisTerminal.dir
+build RatTetris.exe: CXX_EXECUTABLE_LINKER__RatTetris_Debug CMakeFiles/RatTetris.dir/main.cpp.obj CMakeFiles/RatTetris.dir/models/Tetromino.cpp.obj CMakeFiles/RatTetris.dir/models/Board.cpp.obj CMakeFiles/RatTetris.dir/models/Game.cpp.obj CMakeFiles/RatTetris.dir/handlers/PieceGenerator.cpp.obj CMakeFiles/RatTetris.dir/handlers/LevelManager.cpp.obj CMakeFiles/RatTetris.dir/handlers/Renderer.cpp.obj | _deps/raylib-build/raylib/libraylib.a || _deps/raylib-build/raylib/external/glfw/src/glfw _deps/raylib-build/raylib/libraylib.a
+  CONFIG = Debug
+  FLAGS = -g
+  LINK_LIBRARIES = _deps/raylib-build/raylib/libraylib.a  -lopengl32  -lglu32  -lwinmm  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\RatTetris.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\TetrisTerminal.dir\
-  TARGET_FILE = TetrisTerminal.exe
-  TARGET_IMPLIB = libTetrisTerminal.dll.a
-  TARGET_PDB = TetrisTerminal.pdb
-  TARGET_SUPPORT_DIR = CMakeFiles\TetrisTerminal.dir
+  TARGET_FILE = RatTetris.exe
+  TARGET_IMPLIB = libRatTetris.dll.a
+  TARGET_PDB = RatTetris.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\RatTetris.dir
 
 
 #############################################
 # Utility command for package
 
 build CMakeFiles/package.util: CUSTOM_COMMAND all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build && C:\msys64\mingw64\bin\cpack.exe --config ./CPackConfig.cmake"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build && C:\msys64\mingw64\bin\cpack.exe --config ./CPackConfig.cmake"
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -150,7 +156,7 @@ build package: phony CMakeFiles/package.util
 # Utility command for package_source
 
 build CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build && C:\msys64\mingw64\bin\cpack.exe --config ./CPackSourceConfig.cmake"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build && C:\msys64\mingw64\bin\cpack.exe --config ./CPackSourceConfig.cmake"
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -162,7 +168,7 @@ build package_source: phony CMakeFiles/package_source.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build && C:\msys64\mingw64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build && C:\msys64\mingw64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -173,7 +179,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build && C:\msys64\mingw64\bin\cmake.exe --regenerate-during-build -SE:\My_personal_project\tetris-terminal -BE:\My_personal_project\tetris-terminal\build"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build && C:\msys64\mingw64\bin\cmake.exe --regenerate-during-build -SE:\My_personal_project\tetris -BE:\My_personal_project\tetris\build"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -191,7 +197,7 @@ build list_install_components: phony
 # Utility command for install
 
 build CMakeFiles/install.util: CUSTOM_COMMAND all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build && C:\msys64\mingw64\bin\cmake.exe -P cmake_install.cmake"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build && C:\msys64\mingw64\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -203,7 +209,7 @@ build install: phony CMakeFiles/install.util
 # Utility command for install/local
 
 build CMakeFiles/install/local.util: CUSTOM_COMMAND all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build && C:\msys64\mingw64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build && C:\msys64\mingw64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -215,7 +221,7 @@ build install/local: phony CMakeFiles/install/local.util
 # Utility command for install/strip
 
 build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build && C:\msys64\mingw64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build && C:\msys64\mingw64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -224,1139 +230,744 @@ build install/strip: phony CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# E:/My_personal_project/tetris-terminal/CMakeLists.txt
+# E:/My_personal_project/tetris/CMakeLists.txt
 # =============================================================================
-
-# =============================================================================
-# Object build statements for STATIC_LIBRARY target screen
 
 
 #############################################
-# Order-only phony target for screen
+# Utility command for uninstall
 
-build cmake_object_order_depends_target_screen: phony || .
-
-build _deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/box.cpp.obj: CXX_COMPILER__screen_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/screen/box.cpp || cmake_object_order_depends_target_screen
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\screen.dir\src\ftxui\screen\box.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\screen.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\screen.dir\src\ftxui\screen
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\screen.dir\screen.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-screen.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\screen.dir
-
-build _deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/color.cpp.obj: CXX_COMPILER__screen_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/screen/color.cpp || cmake_object_order_depends_target_screen
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\screen.dir\src\ftxui\screen\color.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\screen.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\screen.dir\src\ftxui\screen
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\screen.dir\screen.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-screen.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\screen.dir
-
-build _deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/color_info.cpp.obj: CXX_COMPILER__screen_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/screen/color_info.cpp || cmake_object_order_depends_target_screen
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\screen.dir\src\ftxui\screen\color_info.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\screen.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\screen.dir\src\ftxui\screen
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\screen.dir\screen.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-screen.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\screen.dir
-
-build _deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/screen.cpp.obj: CXX_COMPILER__screen_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/screen/screen.cpp || cmake_object_order_depends_target_screen
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\screen.dir\src\ftxui\screen\screen.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\screen.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\screen.dir\src\ftxui\screen
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\screen.dir\screen.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-screen.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\screen.dir
-
-build _deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/string.cpp.obj: CXX_COMPILER__screen_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/screen/string.cpp || cmake_object_order_depends_target_screen
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\screen.dir\src\ftxui\screen\string.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\screen.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\screen.dir\src\ftxui\screen
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\screen.dir\screen.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-screen.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\screen.dir
-
-build _deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/terminal.cpp.obj: CXX_COMPILER__screen_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/screen/terminal.cpp || cmake_object_order_depends_target_screen
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\screen.dir\src\ftxui\screen\terminal.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\screen.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\screen.dir\src\ftxui\screen
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\screen.dir\screen.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-screen.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\screen.dir
-
-
-# =============================================================================
-# Link build statements for STATIC_LIBRARY target screen
-
-
-#############################################
-# Link the static library _deps\ftxui-build\libftxui-screen.a
-
-build _deps/ftxui-build/libftxui-screen.a: CXX_STATIC_LIBRARY_LINKER__screen_ _deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/box.cpp.obj _deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/color.cpp.obj _deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/color_info.cpp.obj _deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/screen.cpp.obj _deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/string.cpp.obj _deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/terminal.cpp.obj
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\screen.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\screen.dir\screen.pdb
-  TARGET_FILE = _deps\ftxui-build\libftxui-screen.a
-  TARGET_PDB = _deps\ftxui-build\libftxui-screen.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\screen.dir
-
-# =============================================================================
-# Object build statements for STATIC_LIBRARY target dom
-
-
-#############################################
-# Order-only phony target for dom
-
-build cmake_object_order_depends_target_dom: phony || cmake_object_order_depends_target_screen
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/automerge.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/automerge.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\automerge.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/blink.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/blink.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\blink.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/bold.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/bold.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\bold.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/hyperlink.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/hyperlink.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\hyperlink.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/border.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/border.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\border.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/box_helper.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/box_helper.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\box_helper.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/canvas.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/canvas.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\canvas.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/clear_under.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/clear_under.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\clear_under.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/color.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/color.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\color.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/composite_decorator.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/composite_decorator.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\composite_decorator.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/dbox.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/dbox.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\dbox.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/dim.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/dim.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\dim.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/flex.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/flex.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\flex.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/flexbox.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/flexbox.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\flexbox.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/flexbox_config.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/flexbox_config.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\flexbox_config.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/flexbox_helper.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/flexbox_helper.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\flexbox_helper.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/focus.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/focus.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\focus.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/frame.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/frame.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\frame.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/gauge.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/gauge.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\gauge.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/graph.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/graph.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\graph.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/gridbox.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/gridbox.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\gridbox.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/hbox.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/hbox.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\hbox.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/inverted.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/inverted.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\inverted.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/linear_gradient.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/linear_gradient.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\linear_gradient.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/node.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/node.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\node.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/node_decorator.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/node_decorator.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\node_decorator.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/paragraph.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/paragraph.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\paragraph.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/reflect.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/reflect.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\reflect.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/scroll_indicator.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/scroll_indicator.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\scroll_indicator.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/separator.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/separator.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\separator.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/size.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/size.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\size.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/spinner.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/spinner.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\spinner.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/strikethrough.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/strikethrough.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\strikethrough.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/table.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/table.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\table.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/text.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/text.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\text.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/underlined.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/underlined.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\underlined.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/underlined_double.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/underlined_double.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\underlined_double.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/util.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/util.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\util.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-build _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/vbox.cpp.obj: CXX_COMPILER__dom_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/dom/vbox.cpp || cmake_object_order_depends_target_dom
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom\vbox.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\dom.dir\src\ftxui\dom
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-
-# =============================================================================
-# Link build statements for STATIC_LIBRARY target dom
-
-
-#############################################
-# Link the static library _deps\ftxui-build\libftxui-dom.a
-
-build _deps/ftxui-build/libftxui-dom.a: CXX_STATIC_LIBRARY_LINKER__dom_ _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/automerge.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/blink.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/bold.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/hyperlink.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/border.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/box_helper.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/canvas.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/clear_under.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/color.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/composite_decorator.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/dbox.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/dim.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/flex.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/flexbox.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/flexbox_config.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/flexbox_helper.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/focus.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/frame.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/gauge.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/graph.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/gridbox.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/hbox.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/inverted.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/linear_gradient.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/node.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/node_decorator.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/paragraph.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/reflect.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/scroll_indicator.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/separator.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/size.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/spinner.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/strikethrough.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/table.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/text.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/underlined.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/underlined_double.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/util.cpp.obj _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/vbox.cpp.obj || _deps/ftxui-build/libftxui-screen.a
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\dom.dir\dom.pdb
-  TARGET_FILE = _deps\ftxui-build\libftxui-dom.a
-  TARGET_PDB = _deps\ftxui-build\libftxui-dom.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\dom.dir
-
-# =============================================================================
-# Object build statements for STATIC_LIBRARY target component
-
-
-#############################################
-# Order-only phony target for component
-
-build cmake_object_order_depends_target_component: phony || cmake_object_order_depends_target_dom cmake_object_order_depends_target_screen
-
-build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/animation.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/animation.cpp || cmake_object_order_depends_target_component
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\animation.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\component.dir\component.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-component.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-
-build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/button.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/button.cpp || cmake_object_order_depends_target_component
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\button.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\component.dir\component.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-component.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-
-build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/catch_event.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/catch_event.cpp || cmake_object_order_depends_target_component
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\catch_event.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\component.dir\component.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-component.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-
-build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/checkbox.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/checkbox.cpp || cmake_object_order_depends_target_component
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\checkbox.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\component.dir\component.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-component.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-
-build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/collapsible.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/collapsible.cpp || cmake_object_order_depends_target_component
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\collapsible.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\component.dir\component.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-component.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-
-build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/component.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/component.cpp || cmake_object_order_depends_target_component
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\component.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\component.dir\component.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-component.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-
-build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/component_options.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/component_options.cpp || cmake_object_order_depends_target_component
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\component_options.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\component.dir\component.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-component.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-
-build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/container.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/container.cpp || cmake_object_order_depends_target_component
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\container.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\component.dir\component.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-component.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-
-build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/dropdown.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/dropdown.cpp || cmake_object_order_depends_target_component
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\dropdown.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\component.dir\component.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-component.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-
-build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/event.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/event.cpp || cmake_object_order_depends_target_component
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\event.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\component.dir\component.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-component.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-
-build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/hoverable.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/hoverable.cpp || cmake_object_order_depends_target_component
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\hoverable.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\component.dir\component.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-component.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-
-build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/input.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/input.cpp || cmake_object_order_depends_target_component
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\input.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\component.dir\component.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-component.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-
-build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/loop.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/loop.cpp || cmake_object_order_depends_target_component
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\loop.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\component.dir\component.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-component.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-
-build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/maybe.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/maybe.cpp || cmake_object_order_depends_target_component
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\maybe.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\component.dir\component.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-component.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-
-build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/menu.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/menu.cpp || cmake_object_order_depends_target_component
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\menu.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\component.dir\component.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-component.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-
-build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/modal.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/modal.cpp || cmake_object_order_depends_target_component
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\modal.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\component.dir\component.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-component.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-
-build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/radiobox.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/radiobox.cpp || cmake_object_order_depends_target_component
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\radiobox.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\component.dir\component.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-component.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-
-build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/renderer.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/renderer.cpp || cmake_object_order_depends_target_component
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\renderer.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\component.dir\component.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-component.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-
-build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/resizable_split.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/resizable_split.cpp || cmake_object_order_depends_target_component
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\resizable_split.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\component.dir\component.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-component.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-
-build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/screen_interactive.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/screen_interactive.cpp || cmake_object_order_depends_target_component
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\screen_interactive.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\component.dir\component.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-component.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-
-build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/slider.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/slider.cpp || cmake_object_order_depends_target_component
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\slider.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\component.dir\component.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-component.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-
-build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/terminal_input_parser.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/terminal_input_parser.cpp || cmake_object_order_depends_target_component
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\terminal_input_parser.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\component.dir\component.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-component.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-
-build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/util.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/util.cpp || cmake_object_order_depends_target_component
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\util.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\component.dir\component.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-component.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-
-build _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/window.cpp.obj: CXX_COMPILER__component_unscanned_ E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src/ftxui/component/window.cpp || cmake_object_order_depends_target_component
-  DEFINES = -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE
-  DEP_FILE = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component\window.cpp.obj.d
-  FLAGS = -std=c++17
-  INCLUDES = -IE:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/src -isystem E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/include
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-  OBJECT_FILE_DIR = _deps\ftxui-build\CMakeFiles\component.dir\src\ftxui\component
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\component.dir\component.pdb
-  TARGET_PDB = _deps\ftxui-build\libftxui-component.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-
-
-# =============================================================================
-# Link build statements for STATIC_LIBRARY target component
-
-
-#############################################
-# Link the static library _deps\ftxui-build\libftxui-component.a
-
-build _deps/ftxui-build/libftxui-component.a: CXX_STATIC_LIBRARY_LINKER__component_ _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/animation.cpp.obj _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/button.cpp.obj _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/catch_event.cpp.obj _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/checkbox.cpp.obj _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/collapsible.cpp.obj _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/component.cpp.obj _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/component_options.cpp.obj _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/container.cpp.obj _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/dropdown.cpp.obj _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/event.cpp.obj _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/hoverable.cpp.obj _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/input.cpp.obj _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/loop.cpp.obj _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/maybe.cpp.obj _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/menu.cpp.obj _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/modal.cpp.obj _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/radiobox.cpp.obj _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/renderer.cpp.obj _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/resizable_split.cpp.obj _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/screen_interactive.cpp.obj _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/slider.cpp.obj _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/terminal_input_parser.cpp.obj _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/util.cpp.obj _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/window.cpp.obj || _deps/ftxui-build/libftxui-dom.a _deps/ftxui-build/libftxui-screen.a
-  OBJECT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_COMPILE_PDB = _deps\ftxui-build\CMakeFiles\component.dir\component.pdb
-  TARGET_FILE = _deps\ftxui-build\libftxui-component.a
-  TARGET_PDB = _deps\ftxui-build\libftxui-component.pdb
-  TARGET_SUPPORT_DIR = _deps\ftxui-build\CMakeFiles\component.dir
+build _deps/raylib-build/uninstall: phony _deps/raylib-build/CMakeFiles/uninstall
 
 
 #############################################
 # Utility command for package
 
-build _deps/ftxui-build/CMakeFiles/package.util: CUSTOM_COMMAND _deps/ftxui-build/all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build && C:\msys64\mingw64\bin\cpack.exe --config ./CPackConfig.cmake"
+build _deps/raylib-build/CMakeFiles/package.util: CUSTOM_COMMAND _deps/raylib-build/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build && C:\msys64\mingw64\bin\cpack.exe --config ./CPackConfig.cmake"
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
 
-build _deps/ftxui-build/package: phony _deps/ftxui-build/CMakeFiles/package.util
+build _deps/raylib-build/package: phony _deps/raylib-build/CMakeFiles/package.util
 
 
 #############################################
 # Utility command for package_source
 
-build _deps/ftxui-build/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build && C:\msys64\mingw64\bin\cpack.exe --config ./CPackSourceConfig.cmake"
+build _deps/raylib-build/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build && C:\msys64\mingw64\bin\cpack.exe --config ./CPackSourceConfig.cmake"
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
 
-build _deps/ftxui-build/package_source: phony _deps/ftxui-build/CMakeFiles/package_source.util
+build _deps/raylib-build/package_source: phony _deps/raylib-build/CMakeFiles/package_source.util
 
 
 #############################################
 # Utility command for edit_cache
 
-build _deps/ftxui-build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build\_deps\ftxui-build && C:\msys64\mingw64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+build _deps/raylib-build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build\_deps\raylib-build && C:\msys64\mingw64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build _deps/ftxui-build/edit_cache: phony _deps/ftxui-build/CMakeFiles/edit_cache.util
+build _deps/raylib-build/edit_cache: phony _deps/raylib-build/CMakeFiles/edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build _deps/ftxui-build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build\_deps\ftxui-build && C:\msys64\mingw64\bin\cmake.exe --regenerate-during-build -SE:\My_personal_project\tetris-terminal -BE:\My_personal_project\tetris-terminal\build"
+build _deps/raylib-build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build\_deps\raylib-build && C:\msys64\mingw64\bin\cmake.exe --regenerate-during-build -SE:\My_personal_project\tetris -BE:\My_personal_project\tetris\build"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build _deps/ftxui-build/rebuild_cache: phony _deps/ftxui-build/CMakeFiles/rebuild_cache.util
+build _deps/raylib-build/rebuild_cache: phony _deps/raylib-build/CMakeFiles/rebuild_cache.util
 
 
 #############################################
 # Utility command for list_install_components
 
-build _deps/ftxui-build/list_install_components: phony
+build _deps/raylib-build/list_install_components: phony
 
 
 #############################################
 # Utility command for install
 
-build _deps/ftxui-build/CMakeFiles/install.util: CUSTOM_COMMAND _deps/ftxui-build/all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build\_deps\ftxui-build && C:\msys64\mingw64\bin\cmake.exe -P cmake_install.cmake"
+build _deps/raylib-build/CMakeFiles/install.util: CUSTOM_COMMAND _deps/raylib-build/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build\_deps\raylib-build && C:\msys64\mingw64\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
 
-build _deps/ftxui-build/install: phony _deps/ftxui-build/CMakeFiles/install.util
+build _deps/raylib-build/install: phony _deps/raylib-build/CMakeFiles/install.util
 
 
 #############################################
 # Utility command for install/local
 
-build _deps/ftxui-build/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/ftxui-build/all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build\_deps\ftxui-build && C:\msys64\mingw64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+build _deps/raylib-build/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/raylib-build/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build\_deps\raylib-build && C:\msys64\mingw64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
 
-build _deps/ftxui-build/install/local: phony _deps/ftxui-build/CMakeFiles/install/local.util
+build _deps/raylib-build/install/local: phony _deps/raylib-build/CMakeFiles/install/local.util
 
 
 #############################################
 # Utility command for install/strip
 
-build _deps/ftxui-build/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/ftxui-build/all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build\_deps\ftxui-build && C:\msys64\mingw64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+build _deps/raylib-build/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/raylib-build/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build\_deps\raylib-build && C:\msys64\mingw64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
 
-build _deps/ftxui-build/install/strip: phony _deps/ftxui-build/CMakeFiles/install/strip.util
+build _deps/raylib-build/install/strip: phony _deps/raylib-build/CMakeFiles/install/strip.util
+
+
+#############################################
+# Custom command for _deps\raylib-build\CMakeFiles\uninstall
+
+build _deps/raylib-build/CMakeFiles/uninstall | ${cmake_ninja_workdir}_deps/raylib-build/CMakeFiles/uninstall: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build\_deps\raylib-build && C:\msys64\mingw64\bin\cmake.exe -P E:/My_personal_project/tetris/build/_deps/raylib-build/cmake_uninstall.cmake"
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/CMakeLists.txt
+# E:/My_personal_project/tetris/build/_deps/raylib-src/CMakeLists.txt
 # =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target raylib
+
+
+#############################################
+# Order-only phony target for raylib
+
+build cmake_object_order_depends_target_raylib: phony || cmake_object_order_depends_target_glfw
+
+build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.obj: C_COMPILER__raylib_unscanned_Debug E$:/My_personal_project/tetris/build/_deps/raylib-src/src/raudio.c || cmake_object_order_depends_target_raylib
+  CONFIG = Debug
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = _deps\raylib-build\raylib\CMakeFiles\raylib.dir\raudio.c.obj.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=gnu99
+  INCLUDES = -IE:/My_personal_project/tetris/build/_deps/raylib-src/src -isystem E:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include
+  OBJECT_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+  TARGET_SUPPORT_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+
+build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.obj: C_COMPILER__raylib_unscanned_Debug E$:/My_personal_project/tetris/build/_deps/raylib-src/src/rcore.c || cmake_object_order_depends_target_raylib
+  CONFIG = Debug
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = _deps\raylib-build\raylib\CMakeFiles\raylib.dir\rcore.c.obj.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=gnu99
+  INCLUDES = -IE:/My_personal_project/tetris/build/_deps/raylib-src/src -isystem E:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include
+  OBJECT_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+  TARGET_SUPPORT_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+
+build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.obj: C_COMPILER__raylib_unscanned_Debug E$:/My_personal_project/tetris/build/_deps/raylib-src/src/rmodels.c || cmake_object_order_depends_target_raylib
+  CONFIG = Debug
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = _deps\raylib-build\raylib\CMakeFiles\raylib.dir\rmodels.c.obj.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=gnu99
+  INCLUDES = -IE:/My_personal_project/tetris/build/_deps/raylib-src/src -isystem E:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include
+  OBJECT_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+  TARGET_SUPPORT_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+
+build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.obj: C_COMPILER__raylib_unscanned_Debug E$:/My_personal_project/tetris/build/_deps/raylib-src/src/rshapes.c || cmake_object_order_depends_target_raylib
+  CONFIG = Debug
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = _deps\raylib-build\raylib\CMakeFiles\raylib.dir\rshapes.c.obj.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=gnu99
+  INCLUDES = -IE:/My_personal_project/tetris/build/_deps/raylib-src/src -isystem E:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include
+  OBJECT_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+  TARGET_SUPPORT_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+
+build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.obj: C_COMPILER__raylib_unscanned_Debug E$:/My_personal_project/tetris/build/_deps/raylib-src/src/rtext.c || cmake_object_order_depends_target_raylib
+  CONFIG = Debug
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = _deps\raylib-build\raylib\CMakeFiles\raylib.dir\rtext.c.obj.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=gnu99
+  INCLUDES = -IE:/My_personal_project/tetris/build/_deps/raylib-src/src -isystem E:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include
+  OBJECT_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+  TARGET_SUPPORT_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+
+build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.obj: C_COMPILER__raylib_unscanned_Debug E$:/My_personal_project/tetris/build/_deps/raylib-src/src/rtextures.c || cmake_object_order_depends_target_raylib
+  CONFIG = Debug
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = _deps\raylib-build\raylib\CMakeFiles\raylib.dir\rtextures.c.obj.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=gnu99
+  INCLUDES = -IE:/My_personal_project/tetris/build/_deps/raylib-src/src -isystem E:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include
+  OBJECT_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+  TARGET_SUPPORT_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+
+build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.obj: C_COMPILER__raylib_unscanned_Debug E$:/My_personal_project/tetris/build/_deps/raylib-src/src/utils.c || cmake_object_order_depends_target_raylib
+  CONFIG = Debug
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = _deps\raylib-build\raylib\CMakeFiles\raylib.dir\utils.c.obj.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=gnu99
+  INCLUDES = -IE:/My_personal_project/tetris/build/_deps/raylib-src/src -isystem E:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include
+  OBJECT_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+  TARGET_SUPPORT_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target raylib
+
+
+#############################################
+# Link the static library _deps\raylib-build\raylib\libraylib.a
+
+build _deps/raylib-build/raylib/libraylib.a: C_STATIC_LIBRARY_LINKER__raylib_Debug _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/context.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/init.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/input.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/monitor.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/platform.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/window.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_init.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_window.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_module.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_thread.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.obj _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.obj _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.obj _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.obj _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.obj _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.obj _deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.obj || _deps/raylib-build/raylib/external/glfw/src/glfw
+  CONFIG = Debug
+  LANGUAGE_COMPILE_FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g
+  OBJECT_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = _deps\raylib-build\raylib\libraylib.a
+  TARGET_PDB = raylib.a.dbg
+  TARGET_SUPPORT_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
 
 
 #############################################
 # Utility command for package
 
-build _deps/ftxui-build/examples/CMakeFiles/package.util: CUSTOM_COMMAND _deps/ftxui-build/examples/all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build && C:\msys64\mingw64\bin\cpack.exe --config ./CPackConfig.cmake"
+build _deps/raylib-build/raylib/CMakeFiles/package.util: CUSTOM_COMMAND _deps/raylib-build/raylib/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build && C:\msys64\mingw64\bin\cpack.exe --config ./CPackConfig.cmake"
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
 
-build _deps/ftxui-build/examples/package: phony _deps/ftxui-build/examples/CMakeFiles/package.util
+build _deps/raylib-build/raylib/package: phony _deps/raylib-build/raylib/CMakeFiles/package.util
 
 
 #############################################
 # Utility command for package_source
 
-build _deps/ftxui-build/examples/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build && C:\msys64\mingw64\bin\cpack.exe --config ./CPackSourceConfig.cmake"
+build _deps/raylib-build/raylib/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build && C:\msys64\mingw64\bin\cpack.exe --config ./CPackSourceConfig.cmake"
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
 
-build _deps/ftxui-build/examples/package_source: phony _deps/ftxui-build/examples/CMakeFiles/package_source.util
+build _deps/raylib-build/raylib/package_source: phony _deps/raylib-build/raylib/CMakeFiles/package_source.util
 
 
 #############################################
 # Utility command for edit_cache
 
-build _deps/ftxui-build/examples/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build\_deps\ftxui-build\examples && C:\msys64\mingw64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+build _deps/raylib-build/raylib/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build\_deps\raylib-build\raylib && C:\msys64\mingw64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build _deps/ftxui-build/examples/edit_cache: phony _deps/ftxui-build/examples/CMakeFiles/edit_cache.util
+build _deps/raylib-build/raylib/edit_cache: phony _deps/raylib-build/raylib/CMakeFiles/edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build _deps/ftxui-build/examples/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build\_deps\ftxui-build\examples && C:\msys64\mingw64\bin\cmake.exe --regenerate-during-build -SE:\My_personal_project\tetris-terminal -BE:\My_personal_project\tetris-terminal\build"
+build _deps/raylib-build/raylib/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build\_deps\raylib-build\raylib && C:\msys64\mingw64\bin\cmake.exe --regenerate-during-build -SE:\My_personal_project\tetris -BE:\My_personal_project\tetris\build"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build _deps/ftxui-build/examples/rebuild_cache: phony _deps/ftxui-build/examples/CMakeFiles/rebuild_cache.util
+build _deps/raylib-build/raylib/rebuild_cache: phony _deps/raylib-build/raylib/CMakeFiles/rebuild_cache.util
 
 
 #############################################
 # Utility command for list_install_components
 
-build _deps/ftxui-build/examples/list_install_components: phony
+build _deps/raylib-build/raylib/list_install_components: phony
 
 
 #############################################
 # Utility command for install
 
-build _deps/ftxui-build/examples/CMakeFiles/install.util: CUSTOM_COMMAND _deps/ftxui-build/examples/all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build\_deps\ftxui-build\examples && C:\msys64\mingw64\bin\cmake.exe -P cmake_install.cmake"
+build _deps/raylib-build/raylib/CMakeFiles/install.util: CUSTOM_COMMAND _deps/raylib-build/raylib/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build\_deps\raylib-build\raylib && C:\msys64\mingw64\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
 
-build _deps/ftxui-build/examples/install: phony _deps/ftxui-build/examples/CMakeFiles/install.util
+build _deps/raylib-build/raylib/install: phony _deps/raylib-build/raylib/CMakeFiles/install.util
 
 
 #############################################
 # Utility command for install/local
 
-build _deps/ftxui-build/examples/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/ftxui-build/examples/all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build\_deps\ftxui-build\examples && C:\msys64\mingw64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+build _deps/raylib-build/raylib/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/raylib-build/raylib/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build\_deps\raylib-build\raylib && C:\msys64\mingw64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
 
-build _deps/ftxui-build/examples/install/local: phony _deps/ftxui-build/examples/CMakeFiles/install/local.util
+build _deps/raylib-build/raylib/install/local: phony _deps/raylib-build/raylib/CMakeFiles/install/local.util
 
 
 #############################################
 # Utility command for install/strip
 
-build _deps/ftxui-build/examples/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/ftxui-build/examples/all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build\_deps\ftxui-build\examples && C:\msys64\mingw64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+build _deps/raylib-build/raylib/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/raylib-build/raylib/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build\_deps\raylib-build\raylib && C:\msys64\mingw64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
 
-build _deps/ftxui-build/examples/install/strip: phony _deps/ftxui-build/examples/CMakeFiles/install/strip.util
+build _deps/raylib-build/raylib/install/strip: phony _deps/raylib-build/raylib/CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# E:/My_personal_project/tetris-terminal/build/_deps/ftxui-src/CMakeLists.txt
+# E:/My_personal_project/tetris/build/_deps/raylib-src/cmake/GlfwImport.cmake
 # =============================================================================
 
 
 #############################################
 # Utility command for package
 
-build _deps/ftxui-build/doc/CMakeFiles/package.util: CUSTOM_COMMAND _deps/ftxui-build/doc/all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build && C:\msys64\mingw64\bin\cpack.exe --config ./CPackConfig.cmake"
+build _deps/raylib-build/raylib/external/glfw/CMakeFiles/package.util: CUSTOM_COMMAND _deps/raylib-build/raylib/external/glfw/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build && C:\msys64\mingw64\bin\cpack.exe --config ./CPackConfig.cmake"
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
 
-build _deps/ftxui-build/doc/package: phony _deps/ftxui-build/doc/CMakeFiles/package.util
+build _deps/raylib-build/raylib/external/glfw/package: phony _deps/raylib-build/raylib/external/glfw/CMakeFiles/package.util
 
 
 #############################################
 # Utility command for package_source
 
-build _deps/ftxui-build/doc/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build && C:\msys64\mingw64\bin\cpack.exe --config ./CPackSourceConfig.cmake"
+build _deps/raylib-build/raylib/external/glfw/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build && C:\msys64\mingw64\bin\cpack.exe --config ./CPackSourceConfig.cmake"
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
 
-build _deps/ftxui-build/doc/package_source: phony _deps/ftxui-build/doc/CMakeFiles/package_source.util
+build _deps/raylib-build/raylib/external/glfw/package_source: phony _deps/raylib-build/raylib/external/glfw/CMakeFiles/package_source.util
 
 
 #############################################
 # Utility command for edit_cache
 
-build _deps/ftxui-build/doc/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build\_deps\ftxui-build\doc && C:\msys64\mingw64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+build _deps/raylib-build/raylib/external/glfw/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build\_deps\raylib-build\raylib\external\glfw && C:\msys64\mingw64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build _deps/ftxui-build/doc/edit_cache: phony _deps/ftxui-build/doc/CMakeFiles/edit_cache.util
+build _deps/raylib-build/raylib/external/glfw/edit_cache: phony _deps/raylib-build/raylib/external/glfw/CMakeFiles/edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build _deps/ftxui-build/doc/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build\_deps\ftxui-build\doc && C:\msys64\mingw64\bin\cmake.exe --regenerate-during-build -SE:\My_personal_project\tetris-terminal -BE:\My_personal_project\tetris-terminal\build"
+build _deps/raylib-build/raylib/external/glfw/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build\_deps\raylib-build\raylib\external\glfw && C:\msys64\mingw64\bin\cmake.exe --regenerate-during-build -SE:\My_personal_project\tetris -BE:\My_personal_project\tetris\build"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build _deps/ftxui-build/doc/rebuild_cache: phony _deps/ftxui-build/doc/CMakeFiles/rebuild_cache.util
+build _deps/raylib-build/raylib/external/glfw/rebuild_cache: phony _deps/raylib-build/raylib/external/glfw/CMakeFiles/rebuild_cache.util
 
 
 #############################################
 # Utility command for list_install_components
 
-build _deps/ftxui-build/doc/list_install_components: phony
+build _deps/raylib-build/raylib/external/glfw/list_install_components: phony
 
 
 #############################################
 # Utility command for install
 
-build _deps/ftxui-build/doc/CMakeFiles/install.util: CUSTOM_COMMAND _deps/ftxui-build/doc/all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build\_deps\ftxui-build\doc && C:\msys64\mingw64\bin\cmake.exe -P cmake_install.cmake"
+build _deps/raylib-build/raylib/external/glfw/CMakeFiles/install.util: CUSTOM_COMMAND _deps/raylib-build/raylib/external/glfw/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build\_deps\raylib-build\raylib\external\glfw && C:\msys64\mingw64\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
 
-build _deps/ftxui-build/doc/install: phony _deps/ftxui-build/doc/CMakeFiles/install.util
+build _deps/raylib-build/raylib/external/glfw/install: phony _deps/raylib-build/raylib/external/glfw/CMakeFiles/install.util
 
 
 #############################################
 # Utility command for install/local
 
-build _deps/ftxui-build/doc/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/ftxui-build/doc/all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build\_deps\ftxui-build\doc && C:\msys64\mingw64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+build _deps/raylib-build/raylib/external/glfw/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/raylib-build/raylib/external/glfw/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build\_deps\raylib-build\raylib\external\glfw && C:\msys64\mingw64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
 
-build _deps/ftxui-build/doc/install/local: phony _deps/ftxui-build/doc/CMakeFiles/install/local.util
+build _deps/raylib-build/raylib/external/glfw/install/local: phony _deps/raylib-build/raylib/external/glfw/CMakeFiles/install/local.util
 
 
 #############################################
 # Utility command for install/strip
 
-build _deps/ftxui-build/doc/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/ftxui-build/doc/all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris-terminal\build\_deps\ftxui-build\doc && C:\msys64\mingw64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+build _deps/raylib-build/raylib/external/glfw/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/raylib-build/raylib/external/glfw/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build\_deps\raylib-build\raylib\external\glfw && C:\msys64\mingw64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
 
-build _deps/ftxui-build/doc/install/strip: phony _deps/ftxui-build/doc/CMakeFiles/install/strip.util
+build _deps/raylib-build/raylib/external/glfw/install/strip: phony _deps/raylib-build/raylib/external/glfw/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# E:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for OBJECT_LIBRARY target glfw
+
+
+#############################################
+# Order-only phony target for glfw
+
+build cmake_object_order_depends_target_glfw: phony || .
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/context.c.obj: C_COMPILER__glfw_unscanned_Debug E$:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src/context.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\context.c.obj.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=c99 -Wall
+  INCLUDES = -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src -IE:/My_personal_project/tetris/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_SUPPORT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/init.c.obj: C_COMPILER__glfw_unscanned_Debug E$:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src/init.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\init.c.obj.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=c99 -Wall
+  INCLUDES = -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src -IE:/My_personal_project/tetris/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_SUPPORT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/input.c.obj: C_COMPILER__glfw_unscanned_Debug E$:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src/input.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\input.c.obj.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=c99 -Wall
+  INCLUDES = -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src -IE:/My_personal_project/tetris/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_SUPPORT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/monitor.c.obj: C_COMPILER__glfw_unscanned_Debug E$:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src/monitor.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\monitor.c.obj.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=c99 -Wall
+  INCLUDES = -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src -IE:/My_personal_project/tetris/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_SUPPORT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/platform.c.obj: C_COMPILER__glfw_unscanned_Debug E$:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src/platform.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\platform.c.obj.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=c99 -Wall
+  INCLUDES = -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src -IE:/My_personal_project/tetris/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_SUPPORT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj: C_COMPILER__glfw_unscanned_Debug E$:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src/vulkan.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\vulkan.c.obj.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=c99 -Wall
+  INCLUDES = -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src -IE:/My_personal_project/tetris/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_SUPPORT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/window.c.obj: C_COMPILER__glfw_unscanned_Debug E$:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src/window.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\window.c.obj.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=c99 -Wall
+  INCLUDES = -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src -IE:/My_personal_project/tetris/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_SUPPORT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj: C_COMPILER__glfw_unscanned_Debug E$:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src/egl_context.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\egl_context.c.obj.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=c99 -Wall
+  INCLUDES = -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src -IE:/My_personal_project/tetris/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_SUPPORT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.obj: C_COMPILER__glfw_unscanned_Debug E$:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src/osmesa_context.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\osmesa_context.c.obj.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=c99 -Wall
+  INCLUDES = -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src -IE:/My_personal_project/tetris/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_SUPPORT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_init.c.obj: C_COMPILER__glfw_unscanned_Debug E$:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src/null_init.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\null_init.c.obj.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=c99 -Wall
+  INCLUDES = -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src -IE:/My_personal_project/tetris/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_SUPPORT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug E$:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src/null_monitor.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\null_monitor.c.obj.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=c99 -Wall
+  INCLUDES = -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src -IE:/My_personal_project/tetris/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_SUPPORT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_window.c.obj: C_COMPILER__glfw_unscanned_Debug E$:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src/null_window.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\null_window.c.obj.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=c99 -Wall
+  INCLUDES = -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src -IE:/My_personal_project/tetris/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_SUPPORT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug E$:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src/null_joystick.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\null_joystick.c.obj.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=c99 -Wall
+  INCLUDES = -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src -IE:/My_personal_project/tetris/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_SUPPORT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_module.c.obj: C_COMPILER__glfw_unscanned_Debug E$:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src/win32_module.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_module.c.obj.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=c99 -Wall
+  INCLUDES = -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src -IE:/My_personal_project/tetris/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_SUPPORT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj: C_COMPILER__glfw_unscanned_Debug E$:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src/win32_time.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_time.c.obj.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=c99 -Wall
+  INCLUDES = -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src -IE:/My_personal_project/tetris/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_SUPPORT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_thread.c.obj: C_COMPILER__glfw_unscanned_Debug E$:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src/win32_thread.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_thread.c.obj.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=c99 -Wall
+  INCLUDES = -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src -IE:/My_personal_project/tetris/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_SUPPORT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj: C_COMPILER__glfw_unscanned_Debug E$:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src/win32_init.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_init.c.obj.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=c99 -Wall
+  INCLUDES = -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src -IE:/My_personal_project/tetris/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_SUPPORT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug E$:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src/win32_joystick.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_joystick.c.obj.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=c99 -Wall
+  INCLUDES = -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src -IE:/My_personal_project/tetris/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_SUPPORT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug E$:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src/win32_monitor.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_monitor.c.obj.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=c99 -Wall
+  INCLUDES = -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src -IE:/My_personal_project/tetris/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_SUPPORT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj: C_COMPILER__glfw_unscanned_Debug E$:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src/win32_window.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\win32_window.c.obj.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=c99 -Wall
+  INCLUDES = -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src -IE:/My_personal_project/tetris/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_SUPPORT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj: C_COMPILER__glfw_unscanned_Debug E$:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src/wgl_context.c || cmake_object_order_depends_target_glfw
+  CONFIG = Debug
+  DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
+  DEP_FILE = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\wgl_context.c.obj.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=c99 -Wall
+  INCLUDES = -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/include -IE:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/src -IE:/My_personal_project/tetris/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+  TARGET_SUPPORT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
+
+
+
+#############################################
+# Object library glfw
+
+build _deps/raylib-build/raylib/external/glfw/src/glfw: phony _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/context.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/init.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/input.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/monitor.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/platform.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/window.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_init.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_window.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_module.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_thread.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj
+
+
+#############################################
+# Utility command for update_mappings
+
+build _deps/raylib-build/raylib/external/glfw/src/update_mappings: phony _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/update_mappings
+
+
+#############################################
+# Utility command for package
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/package.util: CUSTOM_COMMAND _deps/raylib-build/raylib/external/glfw/src/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build && C:\msys64\mingw64\bin\cpack.exe --config ./CPackConfig.cmake"
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build _deps/raylib-build/raylib/external/glfw/src/package: phony _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/package.util
+
+
+#############################################
+# Utility command for package_source
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build && C:\msys64\mingw64\bin\cpack.exe --config ./CPackSourceConfig.cmake"
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build _deps/raylib-build/raylib/external/glfw/src/package_source: phony _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/package_source.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build\_deps\raylib-build\raylib\external\glfw\src && C:\msys64\mingw64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps/raylib-build/raylib/external/glfw/src/edit_cache: phony _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build\_deps\raylib-build\raylib\external\glfw\src && C:\msys64\mingw64\bin\cmake.exe --regenerate-during-build -SE:\My_personal_project\tetris -BE:\My_personal_project\tetris\build"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/raylib-build/raylib/external/glfw/src/rebuild_cache: phony _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps/raylib-build/raylib/external/glfw/src/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/install.util: CUSTOM_COMMAND _deps/raylib-build/raylib/external/glfw/src/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build\_deps\raylib-build\raylib\external\glfw\src && C:\msys64\mingw64\bin\cmake.exe -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps/raylib-build/raylib/external/glfw/src/install: phony _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/raylib-build/raylib/external/glfw/src/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build\_deps\raylib-build\raylib\external\glfw\src && C:\msys64\mingw64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps/raylib-build/raylib/external/glfw/src/install/local: phony _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/raylib-build/raylib/external/glfw/src/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build\_deps\raylib-build\raylib\external\glfw\src && C:\msys64\mingw64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build _deps/raylib-build/raylib/external/glfw/src/install/strip: phony _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/install/strip.util
+
+
+#############################################
+# Custom command for _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\update_mappings
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/update_mappings | ${cmake_ninja_workdir}_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/update_mappings: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D E:\My_personal_project\tetris\build\_deps\raylib-src\src\external\glfw\src && C:\msys64\mingw64\bin\cmake.exe -P E:/My_personal_project/tetris/build/_deps/raylib-src/src/external/glfw/CMake/GenerateMappings.cmake mappings.h.in mappings.h"
+  DESC = Updating gamepad mappings from upstream repository
 
 # =============================================================================
 # Target aliases.
 
-build TetrisTerminal: phony TetrisTerminal.exe
+build RatTetris: phony RatTetris.exe
 
-build component: phony _deps/ftxui-build/libftxui-component.a
+build glfw: phony _deps/raylib-build/raylib/external/glfw/src/glfw
 
-build dom: phony _deps/ftxui-build/libftxui-dom.a
+build libraylib.a: phony _deps/raylib-build/raylib/libraylib.a
 
-build libftxui-component.a: phony _deps/ftxui-build/libftxui-component.a
+build raylib: phony _deps/raylib-build/raylib/libraylib.a
 
-build libftxui-dom.a: phony _deps/ftxui-build/libftxui-dom.a
+build uninstall: phony _deps/raylib-build/uninstall
 
-build libftxui-screen.a: phony _deps/ftxui-build/libftxui-screen.a
-
-build screen: phony _deps/ftxui-build/libftxui-screen.a
+build update_mappings: phony _deps/raylib-build/raylib/external/glfw/src/update_mappings
 
 # =============================================================================
 # Folder targets.
@@ -1364,30 +975,37 @@ build screen: phony _deps/ftxui-build/libftxui-screen.a
 # =============================================================================
 
 #############################################
-# Folder: E:/My_personal_project/tetris-terminal/build
+# Folder: E:/My_personal_project/tetris/build
 
-build all: phony TetrisTerminal.exe _deps/ftxui-build/all
-
-# =============================================================================
-
-#############################################
-# Folder: E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build
-
-build _deps/ftxui-build/all: phony _deps/ftxui-build/libftxui-screen.a _deps/ftxui-build/libftxui-dom.a _deps/ftxui-build/libftxui-component.a _deps/ftxui-build/examples/all _deps/ftxui-build/doc/all
+build all: phony RatTetris.exe _deps/raylib-build/all
 
 # =============================================================================
 
 #############################################
-# Folder: E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/doc
+# Folder: E:/My_personal_project/tetris/build/_deps/raylib-build
 
-build _deps/ftxui-build/doc/all: phony
+build _deps/raylib-build/all: phony _deps/raylib-build/raylib/all
 
 # =============================================================================
 
 #############################################
-# Folder: E:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/examples
+# Folder: E:/My_personal_project/tetris/build/_deps/raylib-build/raylib
 
-build _deps/ftxui-build/examples/all: phony
+build _deps/raylib-build/raylib/all: phony _deps/raylib-build/raylib/libraylib.a _deps/raylib-build/raylib/external/glfw/all
+
+# =============================================================================
+
+#############################################
+# Folder: E:/My_personal_project/tetris/build/_deps/raylib-build/raylib/external/glfw
+
+build _deps/raylib-build/raylib/external/glfw/all: phony _deps/raylib-build/raylib/external/glfw/src/all
+
+# =============================================================================
+
+#############################################
+# Folder: E:/My_personal_project/tetris/build/_deps/raylib-build/raylib/external/glfw/src
+
+build _deps/raylib-build/raylib/external/glfw/src/all: phony _deps/raylib-build/raylib/external/glfw/src/glfw
 
 # =============================================================================
 # Built-in targets
@@ -1396,14 +1014,14 @@ build _deps/ftxui-build/examples/all: phony
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja E$:/My_personal_project/tetris-terminal/build/cmake_install.cmake E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/cmake_install.cmake E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/examples/cmake_install.cmake E$:/My_personal_project/tetris-terminal/build/_deps/ftxui-build/doc/cmake_install.cmake: RERUN_CMAKE | C$:/msys64/mingw64/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/msys64/mingw64/share/cmake/Modules/CMakeCXXCompiler.cmake.in C$:/msys64/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp C$:/msys64/mingw64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCompilerIdDetection.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineRCCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineSystem.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeNinjaFindMake.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakePackageConfigHelpers.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeRCCompiler.cmake.in C$:/msys64/mingw64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeSystem.cmake.in C$:/msys64/mingw64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeTestCXXCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeTestCompilerCommon.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeTestRCCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/CPack.cmake C$:/msys64/mingw64/share/cmake/Modules/CPackComponent.cmake C$:/msys64/mingw64/share/cmake/Modules/CheckCXXSourceCompiles.cmake C$:/msys64/mingw64/share/cmake/Modules/CheckIncludeFileCXX.cmake C$:/msys64/mingw64/share/cmake/Modules/CheckLibraryExists.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Diab-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-CXX-CXXImportStd.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/PellesC-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Renesas-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/ExternalProject/shared_internal_commands.cmake C$:/msys64/mingw64/share/cmake/Modules/FetchContent.cmake C$:/msys64/mingw64/share/cmake/Modules/FetchContent/CMakeLists.cmake.in C$:/msys64/mingw64/share/cmake/Modules/FindGit.cmake C$:/msys64/mingw64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/mingw64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/mingw64/share/cmake/Modules/FindThreads.cmake C$:/msys64/mingw64/share/cmake/Modules/GNUInstallDirs.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeInspectCXXLinker.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CheckCommon.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/FeatureTesting.cmake C$:/msys64/mingw64/share/cmake/Modules/Linker/GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-Determine-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/WindowsPaths.cmake C$:/msys64/mingw64/share/cmake/Modules/WriteBasicConfigVersionFile.cmake C$:/msys64/mingw64/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/4.4.2/CMakeCXXCompiler.cmake CMakeFiles/4.4.2/CMakeRCCompiler.cmake CMakeFiles/4.4.2/CMakeSystem.cmake E$:/My_personal_project/tetris-terminal/CMakeLists.txt _deps/ftxui-src/CMakeLists.txt _deps/ftxui-src/cmake/ftxui-config.cmake.in _deps/ftxui-src/cmake/ftxui_benchmark.cmake _deps/ftxui-src/cmake/ftxui_coverage.cmake _deps/ftxui-src/cmake/ftxui_export.cmake _deps/ftxui-src/cmake/ftxui_fuzzer.cmake _deps/ftxui-src/cmake/ftxui_install.cmake _deps/ftxui-src/cmake/ftxui_message.cmake _deps/ftxui-src/cmake/ftxui_package.cmake _deps/ftxui-src/cmake/ftxui_set_options.cmake _deps/ftxui-src/cmake/ftxui_test.cmake _deps/ftxui-src/cmake/iwyu.cmake _deps/ftxui-src/doc/CMakeLists.txt _deps/ftxui-src/examples/CMakeLists.txt _deps/ftxui-src/ftxui.pc.in
+build build.ninja E$:/My_personal_project/tetris/build/cmake_install.cmake E$:/My_personal_project/tetris/build/_deps/raylib-build/cmake_install.cmake E$:/My_personal_project/tetris/build/_deps/raylib-build/raylib/cmake_install.cmake E$:/My_personal_project/tetris/build/_deps/raylib-build/raylib/external/glfw/cmake_install.cmake E$:/My_personal_project/tetris/build/_deps/raylib-build/raylib/external/glfw/src/cmake_install.cmake E$:/My_personal_project/tetris/build/_deps/raylib-build/CTestTestfile.cmake E$:/My_personal_project/tetris/build/_deps/raylib-build/raylib/CTestTestfile.cmake: RERUN_CMAKE | C$:/msys64/mingw64/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/msys64/mingw64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDependentOption.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakePackageConfigHelpers.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/mingw64/share/cmake/Modules/CPack.cmake C$:/msys64/mingw64/share/cmake/Modules/CPackComponent.cmake C$:/msys64/mingw64/share/cmake/Modules/CheckCCompilerFlag.cmake C$:/msys64/mingw64/share/cmake/Modules/CheckCSourceCompiles.cmake C$:/msys64/mingw64/share/cmake/Modules/CheckIncludeFile.cmake C$:/msys64/mingw64/share/cmake/Modules/CheckLibraryExists.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/ExternalProject/shared_internal_commands.cmake C$:/msys64/mingw64/share/cmake/Modules/FetchContent.cmake C$:/msys64/mingw64/share/cmake/Modules/FetchContent/CMakeLists.cmake.in C$:/msys64/mingw64/share/cmake/Modules/FindGit.cmake C$:/msys64/mingw64/share/cmake/Modules/FindOpenGL.cmake C$:/msys64/mingw64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/mingw64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/mingw64/share/cmake/Modules/FindThreads.cmake C$:/msys64/mingw64/share/cmake/Modules/GNUInstallDirs.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CheckCommon.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CheckCompilerFlag.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/msys64/mingw64/share/cmake/Modules/Linker/GNU-C.cmake C$:/msys64/mingw64/share/cmake/Modules/Linker/GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/WindowsPaths.cmake C$:/msys64/mingw64/share/cmake/Modules/WriteBasicConfigVersionFile.cmake C$:/msys64/mingw64/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/4.4.2/CMakeCCompiler.cmake CMakeFiles/4.4.2/CMakeCXXCompiler.cmake CMakeFiles/4.4.2/CMakeRCCompiler.cmake CMakeFiles/4.4.2/CMakeSystem.cmake E$:/My_personal_project/tetris/CMakeLists.txt _deps/raylib-src/CMakeLists.txt _deps/raylib-src/CMakeOptions.txt _deps/raylib-src/cmake/AddIfFlagCompiles.cmake _deps/raylib-src/cmake/CompileDefinitions.cmake _deps/raylib-src/cmake/CompilerFlags.cmake _deps/raylib-src/cmake/EnumOption.cmake _deps/raylib-src/cmake/GlfwImport.cmake _deps/raylib-src/cmake/InstallConfigurations.cmake _deps/raylib-src/cmake/JoinPaths.cmake _deps/raylib-src/cmake/LibraryConfigurations.cmake _deps/raylib-src/cmake/LibraryPathToLinkerFlags.cmake _deps/raylib-src/cmake/PackConfigurations.cmake _deps/raylib-src/cmake/ParseConfigHeader.cmake _deps/raylib-src/cmake/PopulateConfigVariablesLocally.cmake _deps/raylib-src/cmake/Uninstall.cmake _deps/raylib-src/cmake/raylib-config-version.cmake _deps/raylib-src/raylib.pc.in _deps/raylib-src/src/CMakeLists.txt _deps/raylib-src/src/external/glfw/CMakeLists.txt _deps/raylib-src/src/external/glfw/CMake/glfw3.pc.in _deps/raylib-src/src/external/glfw/CMake/glfw3Config.cmake.in _deps/raylib-src/src/external/glfw/src/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/msys64/mingw64/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/msys64/mingw64/share/cmake/Modules/CMakeCXXCompiler.cmake.in C$:/msys64/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp C$:/msys64/mingw64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCompilerIdDetection.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineRCCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineSystem.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeNinjaFindMake.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakePackageConfigHelpers.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeRCCompiler.cmake.in C$:/msys64/mingw64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeSystem.cmake.in C$:/msys64/mingw64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeTestCXXCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeTestCompilerCommon.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeTestRCCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/CPack.cmake C$:/msys64/mingw64/share/cmake/Modules/CPackComponent.cmake C$:/msys64/mingw64/share/cmake/Modules/CheckCXXSourceCompiles.cmake C$:/msys64/mingw64/share/cmake/Modules/CheckIncludeFileCXX.cmake C$:/msys64/mingw64/share/cmake/Modules/CheckLibraryExists.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Diab-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-CXX-CXXImportStd.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/PellesC-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Renesas-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/ExternalProject/shared_internal_commands.cmake C$:/msys64/mingw64/share/cmake/Modules/FetchContent.cmake C$:/msys64/mingw64/share/cmake/Modules/FetchContent/CMakeLists.cmake.in C$:/msys64/mingw64/share/cmake/Modules/FindGit.cmake C$:/msys64/mingw64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/mingw64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/mingw64/share/cmake/Modules/FindThreads.cmake C$:/msys64/mingw64/share/cmake/Modules/GNUInstallDirs.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeInspectCXXLinker.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CheckCommon.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/FeatureTesting.cmake C$:/msys64/mingw64/share/cmake/Modules/Linker/GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-Determine-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/WindowsPaths.cmake C$:/msys64/mingw64/share/cmake/Modules/WriteBasicConfigVersionFile.cmake C$:/msys64/mingw64/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/4.4.2/CMakeCXXCompiler.cmake CMakeFiles/4.4.2/CMakeRCCompiler.cmake CMakeFiles/4.4.2/CMakeSystem.cmake E$:/My_personal_project/tetris-terminal/CMakeLists.txt _deps/ftxui-src/CMakeLists.txt _deps/ftxui-src/cmake/ftxui-config.cmake.in _deps/ftxui-src/cmake/ftxui_benchmark.cmake _deps/ftxui-src/cmake/ftxui_coverage.cmake _deps/ftxui-src/cmake/ftxui_export.cmake _deps/ftxui-src/cmake/ftxui_fuzzer.cmake _deps/ftxui-src/cmake/ftxui_install.cmake _deps/ftxui-src/cmake/ftxui_message.cmake _deps/ftxui-src/cmake/ftxui_package.cmake _deps/ftxui-src/cmake/ftxui_set_options.cmake _deps/ftxui-src/cmake/ftxui_test.cmake _deps/ftxui-src/cmake/iwyu.cmake _deps/ftxui-src/doc/CMakeLists.txt _deps/ftxui-src/examples/CMakeLists.txt _deps/ftxui-src/ftxui.pc.in: phony
+build C$:/msys64/mingw64/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/msys64/mingw64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDependentOption.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakePackageConfigHelpers.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/mingw64/share/cmake/Modules/CPack.cmake C$:/msys64/mingw64/share/cmake/Modules/CPackComponent.cmake C$:/msys64/mingw64/share/cmake/Modules/CheckCCompilerFlag.cmake C$:/msys64/mingw64/share/cmake/Modules/CheckCSourceCompiles.cmake C$:/msys64/mingw64/share/cmake/Modules/CheckIncludeFile.cmake C$:/msys64/mingw64/share/cmake/Modules/CheckLibraryExists.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/ExternalProject/shared_internal_commands.cmake C$:/msys64/mingw64/share/cmake/Modules/FetchContent.cmake C$:/msys64/mingw64/share/cmake/Modules/FetchContent/CMakeLists.cmake.in C$:/msys64/mingw64/share/cmake/Modules/FindGit.cmake C$:/msys64/mingw64/share/cmake/Modules/FindOpenGL.cmake C$:/msys64/mingw64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/mingw64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/mingw64/share/cmake/Modules/FindThreads.cmake C$:/msys64/mingw64/share/cmake/Modules/GNUInstallDirs.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CheckCommon.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CheckCompilerFlag.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/msys64/mingw64/share/cmake/Modules/Linker/GNU-C.cmake C$:/msys64/mingw64/share/cmake/Modules/Linker/GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/WindowsPaths.cmake C$:/msys64/mingw64/share/cmake/Modules/WriteBasicConfigVersionFile.cmake C$:/msys64/mingw64/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/4.4.2/CMakeCCompiler.cmake CMakeFiles/4.4.2/CMakeCXXCompiler.cmake CMakeFiles/4.4.2/CMakeRCCompiler.cmake CMakeFiles/4.4.2/CMakeSystem.cmake E$:/My_personal_project/tetris/CMakeLists.txt _deps/raylib-src/CMakeLists.txt _deps/raylib-src/CMakeOptions.txt _deps/raylib-src/cmake/AddIfFlagCompiles.cmake _deps/raylib-src/cmake/CompileDefinitions.cmake _deps/raylib-src/cmake/CompilerFlags.cmake _deps/raylib-src/cmake/EnumOption.cmake _deps/raylib-src/cmake/GlfwImport.cmake _deps/raylib-src/cmake/InstallConfigurations.cmake _deps/raylib-src/cmake/JoinPaths.cmake _deps/raylib-src/cmake/LibraryConfigurations.cmake _deps/raylib-src/cmake/LibraryPathToLinkerFlags.cmake _deps/raylib-src/cmake/PackConfigurations.cmake _deps/raylib-src/cmake/ParseConfigHeader.cmake _deps/raylib-src/cmake/PopulateConfigVariablesLocally.cmake _deps/raylib-src/cmake/Uninstall.cmake _deps/raylib-src/cmake/raylib-config-version.cmake _deps/raylib-src/raylib.pc.in _deps/raylib-src/src/CMakeLists.txt _deps/raylib-src/src/external/glfw/CMakeLists.txt _deps/raylib-src/src/external/glfw/CMake/glfw3.pc.in _deps/raylib-src/src/external/glfw/CMake/glfw3Config.cmake.in _deps/raylib-src/src/external/glfw/src/CMakeLists.txt: phony
 
 
 #############################################

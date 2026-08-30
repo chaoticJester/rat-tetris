@@ -5,6 +5,7 @@
 #include "../handlers/PieceGenerator.h"
 #include "../handlers/LevelManager.h"
 #include "Tetromino.h"
+#include "raylib.h"
 #include <array>
 
 class Game {
@@ -16,8 +17,8 @@ class Game {
         Tetromino current;
         Tetromino currentHold;
         bool gameOver = false;
-        bool canHold = true;    
-    
+        bool canHold = true; 
+        int lockCount = 0;   
     public:
         Game();
         bool isValidPosition(const Tetromino& piece) const;
@@ -39,6 +40,7 @@ class Game {
         int getScore() const;
         int getLevel() const;
         int getTotalLines() const;
+        int getLockCount() const;
         double getFallDelay() const;   
         std::array<Point,4> getGhostBlocks() const;
 };

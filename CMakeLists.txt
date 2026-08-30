@@ -1,23 +1,20 @@
-cmake_minimum_required(VERSION 3.14)   # 3.14+ รองรับ FetchContent
-
+cmake_minimum_required(VERSION 3.14)
 project(Tetris LANGUAGES CXX)
-
-# --- มาตรฐานภาษา ---
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-# --- ดึง FTXUI จาก GitHub อัตโนมัติ (ต้องมีเน็ตตอน configure ครั้งแรก) ---
 include(FetchContent)
 FetchContent_Declare(
-    ftxui
-    GIT_REPOSITORY https://github.com/ArthurSonzogni/FTXUI.git
-    GIT_TAG        v5.0.0          # ล็อกเวอร์ชันไว้ กัน API เปลี่ยน
+    raylib
+    GIT_REPOSITORY https://github.com/raysan5/raylib.git
+    GIT_TAG        5.5
 )
-FetchContent_MakeAvailable(ftxui)
+set(BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
+set(BUILD_GAMES    OFF CACHE BOOL "" FORCE)
+FetchContent_MakeAvailable(raylib)
 
-# --- รวมไฟล์ .cpp ทั้งหมดของเกม ---
-add_executable(TetrisTerminal
+add_executable(RatTetris
     main.cpp
     models/Tetromino.cpp
     models/Board.cpp
@@ -26,18 +23,12 @@ add_executable(TetrisTerminal
     handlers/LevelManager.cpp
     handlers/Renderer.cpp
 )
-
-# --- ให้ทุกไฟล์หา header ข้าม folder เจอ (models/ กับ handlers/) ---
-# เพราะ handlers/*.h include "Types.h" (อยู่ใน models/) และ Game.h include ข้าม folder
-target_include_directories(TetrisTerminal PRIVATE
+target_include_directories(RatTetris PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}
     ${CMAKE_CURRENT_SOURCE_DIR}/models
     ${CMAKE_CURRENT_SOURCE_DIR}/handlers
 )
-
-# --- ลิงก์ FTXUI (3 ส่วน: component ต้องมาก่อน dom ก่อน screen) ---
-target_link_libraries(TetrisTerminal PRIVATE
-    ftxui::component
-    ftxui::dom
-    ftxui::screen
-)
+target_link_libraries(RatTetris PRIVATE raylib)
+if (APPLE)
+    target_link_libraries(RatTetris PRIVATE "-framework IOKit" "-framework Cocoa" "-framework OpenGL")
+endif()

@@ -46,15 +46,13 @@ void Board::lockPiece(const std::array<Point,4>& blocks, PieceType type) {
 
 int Board::clearLines() {
     int count = 0;
-    for(int y = TOTAL_HEIGHT - 1; y >= 0;) {
-        if(isRowFull(y)) {
-            for(int i = y; i > 0; i--) {
-                grid2D[i] = grid2D[i+1];
-            }
-            grid2D[0] = {};
-            count ++;
+    for (int y = TOTAL_HEIGHT - 1; y >= 0; ) {
+        if (isRowFull(y)) {
+            for (int i = y; i > 0; i--) grid2D[i] = grid2D[i-1];   
+            grid2D[0] = {};                                         
+            count++;
         } else {
-            y--;
+            y--;    
         }
     }
     return count;

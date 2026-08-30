@@ -3,6 +3,7 @@
 
 Game::Game() : current(pieceGenerator.next()), currentHold(Tetromino(PieceType::Empty)) {}
 
+
 bool Game::isValidPosition(const Tetromino& piece) const {
     std::array<Point, 4> currentPosi = piece.getBlocks();
     for(int i = 0; i < 4; i++) {
@@ -85,6 +86,7 @@ bool Game::rotate(Direction dir) {
 
 void Game::lock() {
     board.lockPiece(current.getBlocks(), current.getPieceType());
+    lockCount++;
     levelManager.addLines(board.clearLines());
     canHold = true; 
     spawn();
@@ -155,6 +157,10 @@ int Game::getLevel() const {
 
 int Game::getTotalLines() const { 
     return levelManager.getTotalLines(); 
+}
+
+int Game::getLockCount() const { 
+    return lockCount; 
 }
 
 double Game::getFallDelay() const { 

@@ -12,13 +12,13 @@ struct Point { int x, y; };
 
 enum class GameColor { 
     Empty, 
-    Cyan, Yellow, Magenta, Green, Red, Blue, Orange, 
+    Cyan, Yellow, Purple, Green, Red, Blue, Orange, 
     Ghost
 };
 
 static const GameColor COLOR_MAP[] = {
     GameColor::Empty, 
-    GameColor::Cyan, GameColor::Yellow, GameColor::Magenta, GameColor::Green, GameColor::Red, GameColor::Blue, GameColor::Orange,
+    GameColor::Cyan, GameColor::Yellow, GameColor::Purple, GameColor::Green, GameColor::Red, GameColor::Blue, GameColor::Orange,
     GameColor::Ghost
 };
 
