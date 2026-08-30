@@ -61,6 +61,8 @@ int main() {
     const float DAS = 0.15f;      // หน่วงก่อนเริ่มรัว (วินาที)
     const float ARR = 0.03f;      // ความเร็วรัว (วินาที/ช่อง)
     bool gameOverHandled = false;
+    bool firstHold = false;
+    bool justHold = false;
 
     // ประกาศสถานะของเกม
     enum class GameState { PLAYING, TRANSITION, GAME_OVER };
@@ -163,12 +165,16 @@ int main() {
                     game.hardDrop();
                     lockTimer = 0.0f; fallTimer = 0.0f;
                     lockResets = 0; lowestY = getPieceBottomY();
+                    justHold = false;
+
                 }
                 // รีเซ็ตค่าหากมีการ Hold (เพราะเกิดบล็อกชิ้นใหม่)
                 if (IsKeyPressed(KEY_C) || IsKeyPressed(KEY_LEFT_SHIFT)) {
                     if (game.hold()) {
-                        lockTimer = 0.0f; fallTimer = 0.0f;
+                        lockTimer = 0.0f; 
+                        fallTimer = 0.0f;
                         lockResets = 0; lowestY = getPieceBottomY();
+                        justHold = true;
                     }
                 }
 
@@ -202,6 +208,8 @@ int main() {
                         // --- ส่วนที่เพิ่มเข้ามา ---
                         lockResets = 0;                 // เริ่มนับโควต้าใหม่
                         lowestY = getPieceBottomY();    // เก็บความลึกของบล็อกชิ้นใหม่
+                        justHold = false;
+
                     }
                 } else {
                     lockTimer = 0.0f; 
@@ -263,7 +271,7 @@ int main() {
         ClearBackground(BLACK);
         
         // วาดกระดานเกมเสมอ ไม่ว่าจะอยู่สถานะไหน
-        renderer.render(game);
+        renderer.render(game, justHold);
         // VOLUME %
         DrawText(TextFormat("MASTER VOL: %.0f%", masterVolume * 100), 830, 630, 20, RAYWHITE);
         DrawText(TextFormat("BGM VOL: %.0f%", musicVolume * 100), 830, 650, 20, RAYWHITE);

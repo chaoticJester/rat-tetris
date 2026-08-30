@@ -43,7 +43,7 @@ std::array<std::array<GameColor, 10>, 22> Renderer::buildRenderGrid(const Game& 
     return grid;
 }
 
-void Renderer::drawPieceAt(PieceType type, int px, int py) {
+void Renderer::drawPieceAt(PieceType type, int px, int py, bool justSwap) {
     if (type == PieceType::Empty) return;
     const int CELL = 25;   // ขนาดบล็อกในกล่องเล็ก
 
@@ -78,7 +78,7 @@ void Renderer::drawPieceAt(PieceType type, int px, int py) {
 
     // 6. วาดชิ้นส่วน โดยหักลบตำแหน่ง minX, minY ด้วย เพื่อให้ขอบซ้าย/บนของชิ้นส่วน เริ่มที่ 0
     for (const auto& b : blocks) {
-        Color col = toRaylibColor(pieceToColor(type));
+        Color col = toRaylibColor((justSwap)? GameColor::Ghost: pieceToColor(type));
         
         int drawX = px + offsetX + ((b.x - minX) * CELL);
         int drawY = py + offsetY + ((b.y - minY) * CELL);
@@ -116,11 +116,11 @@ void Renderer::renderStats(const Game& game) {
     DrawText(TextFormat("%d", game.getScore()), sx, sy + 120, 20, RAYWHITE);     // ขยับมาที่ sy + 120
 }
 
-void Renderer::renderHold(const Game& game) {
+void Renderer::renderHold(const Game& game, bool justSwap) {
     int hx = 320, hy = 30;    // ตำแหน่งซ้ายของกระดาน
     DrawText("HOLD", hx, hy, 20, RAYWHITE);
     DrawRectangleLines(hx, hy + 25, 4*25, 4*25, RAYWHITE);   // เลื่อนกรอบลงมาจากข้อความ
-    drawPieceAt(game.getHoldType(), hx, hy + 25);
+    drawPieceAt(game.getHoldType(), hx, hy + 25, justSwap);
 }
 
 void Renderer::renderNext(const Game& game) {
@@ -128,12 +128,12 @@ void Renderer::renderNext(const Game& game) {
     DrawText("NEXT", nx, 30, 20, RAYWHITE);
     auto next5 = game.getNext5Pieces();
     for (int i = 0; i < 5; i++) {
-        drawPieceAt(next5[i], nx, ny + i * (4*25 + 10));   
+        drawPieceAt(next5[i], nx, ny + i * (4*25 + 10), false);   
     }
 }
-void Renderer::render(const Game& game) {
+void Renderer::render(const Game& game, bool justSwap) {
     renderBoard(game); 
-    renderHold(game);
+    renderHold(game, justSwap);
     renderNext(game);
     renderStats(game);
 }
