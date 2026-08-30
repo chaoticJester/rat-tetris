@@ -42,6 +42,21 @@ int main() {
     float fallTimer = 0; 
     float softDropTimer = 0;  // สำหรับลง
     float dasTimer = 0;           // นับเวลาที่กดค้าง
+    float lockTimer = 0;          
+    int lockResets = 0;                 // นับจำนวนครั้งที่สไลด์/หมุน ตอนแตะพื้น
+    int lowestY = 0;                    // เก็บตำแหน่ง Y ที่ต่ำที่สุดที่ชิ้นส่วนเคยลงไปถึง
+    const int MAX_RESETS = 15;          // จำนวนครั้งสูงสุดที่อนุญาตให้ยื้อได้
+
+    // Lambda function สำหรับหาจุดต่ำสุดของบล็อกชิ้นปัจจุบัน
+    auto getPieceBottomY = [&]() {
+        int bottomY = -1;
+        for (const auto& b : game.getCurrentBlocks()) {
+            if (b.y > bottomY) bottomY = b.y;
+            }
+            return bottomY;
+    };
+
+    lowestY = getPieceBottomY(); // กำหนดค่าเริ่มต้น
     const float DAS = 0.15f;      // หน่วงก่อนเริ่มรัว (วินาที)
     const float ARR = 0.03f;      // ความเร็วรัว (วินาที/ช่อง)
     bool gameOverHandled = false;
@@ -84,34 +99,39 @@ int main() {
                 // 3. ลอจิกตอนเล่นปกติ (ใส่ของเดิมไว้ตรงนี้)
                 
                 // ========== INPUT ==========
-                if (IsKeyPressed(KEY_LEFT)) {          // กดครั้งแรก
-                    game.moveLeft();                    // เลื่อนทันที 1 ช่อง
-                    dasTimer = 0;                       // เริ่มนับ DAS
+                // ประกาศไว้ก่อนเริ่มเช็ก Input
+                bool actionSuccess = false; 
+
+                if (IsKeyPressed(KEY_LEFT)) {          
+                    if (game.moveLeft()) actionSuccess = true; 
+                    dasTimer = 0;                       
                 }
-                else if (IsKeyDown(KEY_LEFT)) {        // กดค้างต่อ
+                else if (IsKeyDown(KEY_LEFT)) {        
                     dasTimer += GetFrameTime();
-                    if (dasTimer >= DAS) {             // ผ่าน DAS delay แล้ว
-                        game.moveLeft();               // เริ่มรัว
-                        dasTimer -= ARR;               // เว้นระยะ ARR ก่อนรัวครั้งถัดไป
+                    if (dasTimer >= DAS) {             
+                        if (game.moveLeft()) actionSuccess = true;               
+                        dasTimer -= ARR;               
                     }
                 }
                 if (IsKeyPressed(KEY_RIGHT)) {          
-                    game.moveRight();                   
+                    if (game.moveRight()) actionSuccess = true;                   
                     dasTimer = 0;                       
                 }
                 else if (IsKeyDown(KEY_RIGHT)) {        
                     dasTimer += GetFrameTime();
                     if (dasTimer >= DAS) {             
-                        game.moveRight();               
+                        if (game.moveRight()) actionSuccess = true;               
                         dasTimer -= ARR;            
                     }
                 }
                 if (IsKeyPressed(KEY_X)) {
-                    game.rotate(Direction::CW);
+                    if (game.rotate(Direction::CW)) actionSuccess = true;
                 }
                 if (IsKeyPressed(KEY_Z)) {
-                    game.rotate(Direction::CCW);
+                    if (game.rotate(Direction::CCW)) actionSuccess = true;
                 }
+
+                // โค้ดส่วน Soft Drop ใช้ของเดิมได้เลย
                 if (IsKeyDown(KEY_DOWN)) { 
                     softDropTimer += GetFrameTime();
                     if (softDropTimer >= 0.05f) {   
@@ -121,23 +141,64 @@ int main() {
                 } else {
                     softDropTimer = 0;
                 }
+
+                // รีเซ็ตค่าหากมีการ Hard Drop (เพราะเกิดบล็อกชิ้นใหม่)
                 if (IsKeyPressed(KEY_SPACE)) {
                     game.hardDrop();
+                    lockTimer = 0.0f; fallTimer = 0.0f;
+                    lockResets = 0; lowestY = getPieceBottomY();
                 }
+                // รีเซ็ตค่าหากมีการ Hold (เพราะเกิดบล็อกชิ้นใหม่)
                 if (IsKeyPressed(KEY_C) || IsKeyPressed(KEY_LEFT_SHIFT)) {
-                    game.hold();
+                    if (game.hold()) {
+                        lockTimer = 0.0f; fallTimer = 0.0f;
+                        lockResets = 0; lowestY = getPieceBottomY();
+                    }
                 }
-                // ========== UPDATE (gravity) ==========
-        
-                // ในloop:
-                fallTimer += GetFrameTime();              // เวลาที่ผ่านไปแต่ละเฟรม (วินาที)
-                float delay = game.getFallDelay();
-                if (delay <= 0) delay = 0.05f;             // ← เคส fallDelay=0 (level>20) ที่เลื่อนมาจาก Phase 5!
-                if (fallTimer >= delay) {
-                    game.tick();                           // ชิ้นตกเอง 1 ก้าว
-                    fallTimer = 0;                         // reset
+
+                // --- ระบบ Reset Timer (Infinity Rule) ---
+                // 1. ตรวจสอบถ้าบล็อกหล่นลงมาลึกกว่าเดิม ให้เคลียร์โควต้าการขยับ
+                int currentBottom = getPieceBottomY();
+                if (currentBottom > lowestY) {
+                    lowestY = currentBottom;
+                    lockResets = 0; 
                 }
-        
+
+                // 2. ถ้าผู้เล่นขยับ/หมุนสำเร็จ ตอนที่บล็อกแตะพื้นไปแล้ว
+                if (actionSuccess) {
+                    // ถ้ายื้อไม่เกินลิมิต ให้รีเซ็ตเวลา
+                    if (!game.canMoveDown() && lockResets < MAX_RESETS) {
+                        lockTimer = 0.0f; 
+                        lockResets++;     
+                    }
+                }
+
+                // ========== UPDATE (gravity & lock delay) ==========
+                if (!game.canMoveDown()) {
+                    lockTimer += GetFrameTime();
+                    
+                    // ถ้าเวลาเกิน Lock Delay (หรือเกินโควต้า 15 ครั้งแล้วไม่ขยับต่อ) ให้ล็อก
+                    if (lockTimer >= game.getLockDelay()) {
+                        game.lock();
+                        lockTimer = 0.0f;  
+                        fallTimer = 0.0f;
+                        
+                        // --- ส่วนที่เพิ่มเข้ามา ---
+                        lockResets = 0;                 // เริ่มนับโควต้าใหม่
+                        lowestY = getPieceBottomY();    // เก็บความลึกของบล็อกชิ้นใหม่
+                    }
+                } else {
+                    lockTimer = 0.0f; 
+                    fallTimer += GetFrameTime();              
+                    float delay = game.getFallDelay();
+                    if (delay <= 0) delay = 0.05f;            
+                    
+                    if (fallTimer >= delay) {
+                        game.softDrop();   
+                        fallTimer = 0.0f;                         
+                    }
+                }
+                
                 //========== SFX ==========
                 if (game.getLockCount() > lastLocks) {
                     PlaySound(lockSound);
@@ -146,7 +207,7 @@ int main() {
                     PlaySound(clearSound);
                     lastLines = game.getTotalLines();
                 }
-            }
+            }           
 
         } else if (state == GameState::TRANSITION) {
             // นับเวลาถอยหลังหน้าคั่น

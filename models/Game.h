@@ -43,4 +43,6 @@ class Game {
         int getLockCount() const;
         double getFallDelay() const;   
         std::array<Point,4> getGhostBlocks() const;
+	bool canMoveDown() const;
+	double getLockDelay() const;
 };

@@ -179,3 +179,13 @@ std::array<Point,4> Game::getGhostBlocks() const {
     }
     return ghost.getBlocks();
 }
+
+bool Game::canMoveDown() const {
+    Tetromino copy = current;
+    copy.move(0, 1);
+    return isValidPosition(copy);
+}
+
+double Game::getLockDelay() const {
+    return levelManager.getLockDelay();
+}
