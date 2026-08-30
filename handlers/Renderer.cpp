@@ -43,10 +43,54 @@ std::array<std::array<GameColor, 10>, 22> Renderer::buildRenderGrid(const Game& 
     return grid;
 }
 
+void Renderer::drawPieceAt(PieceType type, int px, int py) {
+    if (type == PieceType::Empty) return;
+    const int CELL = 25;   // ขนาดบล็อกในกล่องเล็ก
+
+    Tetromino piece(type);
+    auto blocks = piece.getLocalBlocks();
+
+    // 1. หาจุดต่ำสุด-สูงสุด ของชิ้นส่วน (Bounding Box จริงๆ ของรูปทรง)
+    int minX = 4, maxX = -1;
+    int minY = 4, maxY = -1;
+    for (const auto& b : blocks) {
+        if (b.x < minX) minX = b.x;
+        if (b.x > maxX) maxX = b.x;
+        if (b.y < minY) minY = b.y;
+        if (b.y > maxY) maxY = b.y;
+    }
+
+    // 2. คำนวณความกว้าง และความสูง ของชิ้นส่วน (หน่วยเป็นจำนวนบล็อก)
+    int pieceWidthBlocks = (maxX - minX) + 1;
+    int pieceHeightBlocks = (maxY - minY) + 1;
+
+    // 3. แปลงเป็นพิกเซล
+    int pieceWidthPx = pieceWidthBlocks * CELL;
+    int pieceHeightPx = pieceHeightBlocks * CELL;
+
+    // 4. ขนาดของกล่อง (จากโค้ดเดิมของคุณคือ 4*25 = 100)
+    int boxSize = 4 * CELL;
+
+    // 5. คำนวณ Offset ให้ชิ้นส่วนอยู่กึ่งกลางกล่อง
+    // (ขนาดกล่อง - ขนาดชิ้นส่วน) / 2
+    int offsetX = (boxSize - pieceWidthPx) / 2;
+    int offsetY = (boxSize - pieceHeightPx) / 2;
+
+    // 6. วาดชิ้นส่วน โดยหักลบตำแหน่ง minX, minY ด้วย เพื่อให้ขอบซ้าย/บนของชิ้นส่วน เริ่มที่ 0
+    for (const auto& b : blocks) {
+        Color col = toRaylibColor(pieceToColor(type));
+        
+        int drawX = px + offsetX + ((b.x - minX) * CELL);
+        int drawY = py + offsetY + ((b.y - minY) * CELL);
+
+        DrawRectangle(drawX, drawY, CELL, CELL, col);
+        DrawRectangleLines(drawX, drawY, CELL, CELL, Color{40,40,40,255});
+    }
+}
+
 void Renderer::renderBoard(const Game& game) {
-    // วาดทดสอบ: สี่เหลี่ยมมุมซ้ายบน
-    const int CELL = 30;        // ขนาดบล็อก 30×30 pixel
-    const int OX = 120, OY = 18;  // จุดเริ่มวาด board (offset ซ้าย/บน)
+    const int CELL = 30;          // ขนาดบล็อก 30x30 pixel
+    const int OX = 490, OY = 30;  // เปลี่ยนจุดเริ่มวาดให้อยู่ตรงกลางหน้าจอ
 
     auto grid = buildRenderGrid(game);
     for (int y = 0; y < 22; y++) {
@@ -64,39 +108,29 @@ void Renderer::renderBoard(const Game& game) {
 }
 
 void Renderer::renderStats(const Game& game) {
-    int sx = 10, sy = 250;   // ตำแหน่ง
+    int sx = 320, sy = 250;   
     DrawText(TextFormat("LEVEL: %d", game.getLevel()), sx, sy, 20, RAYWHITE);
-    DrawText(TextFormat("LINES: %d", game.getTotalLines()), sx, sy + 30, 20, RAYWHITE);
-    DrawText("SCORE:", sx, sy + 60, 20, RAYWHITE);
-    DrawText(TextFormat("%d", game.getScore()), sx, sy + 90, 20, RAYWHITE);
-}
-
-void Renderer::drawPieceAt(PieceType type, int px, int py) {
-    if (type == PieceType::Empty) return;
-    const int CELL = 25;   // ขนาดบล็อกในกล่องเล็ก (เล็กกว่า board นิดหน่อยก็ได้)
-    Tetromino piece(type);
-    for (auto& b : piece.getLocalBlocks()) {
-        Color col = toRaylibColor(pieceToColor(type));
-        DrawRectangle(px + b.x*CELL, py + b.y*CELL, CELL, CELL, col);
-        DrawRectangleLines(px + b.x*CELL, py + b.y*CELL, CELL, CELL, Color{40,40,40,255});
-    }
+    DrawText("LINES:", sx, sy + 30, 20, RAYWHITE);
+    DrawText(TextFormat("%d", game.getTotalLines()), sx, sy + 60, 20, RAYWHITE); // ขยับมาที่ sy + 60
+    DrawText("SCORE:", sx, sy + 90, 20, RAYWHITE);                               // ขยับมาที่ sy + 90
+    DrawText(TextFormat("%d", game.getScore()), sx, sy + 120, 20, RAYWHITE);     // ขยับมาที่ sy + 120
 }
 
 void Renderer::renderHold(const Game& game) {
-    DrawText("HOLD", 10, 10, 20, RAYWHITE);
-    DrawRectangleLines(10, 35, 4*25, 4*25, RAYWHITE);   // กรอบกล่อง
-    drawPieceAt(game.getHoldType(), 10, 35);
+    int hx = 320, hy = 30;    // ตำแหน่งซ้ายของกระดาน
+    DrawText("HOLD", hx, hy, 20, RAYWHITE);
+    DrawRectangleLines(hx, hy + 25, 4*25, 4*25, RAYWHITE);   // เลื่อนกรอบลงมาจากข้อความ
+    drawPieceAt(game.getHoldType(), hx, hy + 25);
 }
 
 void Renderer::renderNext(const Game& game) {
-    int nx = 500, ny = 35;   // ตำแหน่งขวา
-    DrawText("NEXT", nx, 10, 20, RAYWHITE);
+    int nx = 830, ny = 55;    // ตำแหน่งขวาของกระดาน (490 + 300 + 40)
+    DrawText("NEXT", nx, 30, 20, RAYWHITE);
     auto next5 = game.getNext5Pieces();
     for (int i = 0; i < 5; i++) {
-        drawPieceAt(next5[i], nx, ny + i * (4*25 + 10));   // เว้นระยะแต่ละชิ้น
+        drawPieceAt(next5[i], nx, ny + i * (4*25 + 10));   
     }
 }
-
 void Renderer::render(const Game& game) {
     renderBoard(game); 
     renderHold(game);
