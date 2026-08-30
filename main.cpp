@@ -22,7 +22,7 @@ int main() {
         std::cout << line << std::endl;
         musicLibrary.push_back(line.c_str());
     }
-
+    
     if (musicLibrary.empty()) {
         std::cout << "ไม่พบรายการเพลง!\n";
         // จัดการ เช่นข้ามระบบเพลง
@@ -33,7 +33,8 @@ int main() {
     Sound gameOver = LoadSound("sounds/sfx/game-over-voice.mp3");
     int lastLines = game.getTotalLines();
     int lastLocks = game.getLockCount();
-
+    float masterVolume = 1.0f;
+    float musicVolume = 1.0f;
     
     int currentLevel = game.getLevel();
     Music currentMusic = LoadMusicStream(musicLibrary[0].c_str());
@@ -67,7 +68,22 @@ int main() {
     float transitionTimer = 0.0f; // ตัวจับเวลาหน้าคั่นเลเวล
 
     while (!WindowShouldClose()) {
-        
+        if(IsKeyPressed(KEY_P) && masterVolume < 1.0f) {
+            masterVolume += 0.1f;
+            SetMasterVolume(masterVolume);
+        };
+        if(IsKeyPressed(KEY_O)) {
+            masterVolume -= 0.1f;
+            SetMasterVolume(masterVolume);
+        }
+        if(IsKeyPressed(KEY_L) && musicVolume < 1.0f) {
+            musicVolume += 0.1f;
+            SetMusicVolume(currentMusic, musicVolume);
+        };
+        if(IsKeyPressed(KEY_K)) {
+            musicVolume -= 0.1f;
+            SetMusicVolume(currentMusic, musicVolume);
+        }
         // ========== อัปเดตเสียง (ทำทุกเฟรม) ==========
         UpdateMusicStream(currentMusic);
 
@@ -83,7 +99,7 @@ int main() {
             else if (currentLevel != game.getLevel()) {
                 currentLevel = game.getLevel();
                 state = GameState::TRANSITION;
-                transitionTimer = 2.0f; // ตั้งเวลาแสดงหน้าคั่น 2 วินาที (ปรับได้)
+                transitionTimer = 1.5f; // ตั้งเวลาแสดงหน้าคั่น 1 วินาที (ปรับได้)
                 
                 // เปลี่ยนเพลง
                 UnloadMusicStream(currentMusic); 
@@ -198,7 +214,7 @@ int main() {
                         fallTimer = 0.0f;                         
                     }
                 }
-                
+
                 //========== SFX ==========
                 if (game.getLockCount() > lastLocks) {
                     PlaySound(lockSound);
@@ -248,6 +264,9 @@ int main() {
         
         // วาดกระดานเกมเสมอ ไม่ว่าจะอยู่สถานะไหน
         renderer.render(game);
+        // VOLUME %
+        DrawText(TextFormat("MASTER VOL: %.0f%", masterVolume * 100), 830, 630, 20, RAYWHITE);
+        DrawText(TextFormat("BGM VOL: %.0f%", musicVolume * 100), 830, 650, 20, RAYWHITE);
 
         if (state == GameState::TRANSITION) {
             // วาดจอ LEVEL UP ทับ (ดำโปร่งใส)
