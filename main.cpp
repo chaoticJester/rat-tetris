@@ -72,7 +72,12 @@ int main() {
                 
                 // เปลี่ยนเพลง
                 UnloadMusicStream(currentMusic); 
-                currentMusic = LoadMusicStream(musicLibrary[currentLevel - 1].c_str());
+                if(currentLevel < 20) {
+                    currentMusic = LoadMusicStream(musicLibrary[currentLevel - 1].c_str());
+                } else {
+                    currentMusic = LoadMusicStream(musicLibrary[19].c_str());
+                }
+                
                 PlayMusicStream(currentMusic);  
             } else {
 
