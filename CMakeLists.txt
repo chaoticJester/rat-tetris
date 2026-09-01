@@ -16,6 +16,7 @@ FetchContent_MakeAvailable(raylib)
 
 add_executable(RatTetris WIN32
     main.cpp
+    modes/NormalMode.cpp
     models/Tetromino.cpp
     models/Board.cpp
     models/Game.cpp
