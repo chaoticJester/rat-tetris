@@ -1,7 +1,7 @@
 // PieceGenerator.h
 #pragma once
 
-#include "..\models\Types.h"
+#include "../models/Types.h"
 #include <deque>
 #include <array>
 #include <random>
